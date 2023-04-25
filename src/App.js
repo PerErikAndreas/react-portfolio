@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import { Sec1Presentation } from './Components/Sections/Sec1Presentation';
 
 export const App = () => {
   return (
     <div>
-      Find me in src/app.js!
+      <Sec1Presentation />
     </div>
   )
 }
