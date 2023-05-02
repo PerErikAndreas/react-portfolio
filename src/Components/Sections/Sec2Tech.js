@@ -2,25 +2,35 @@
 
 import React from 'react';
 import styled from 'styled-components';
+import { ParagraphText, SectionTitle, BlueBackgroundText, DarkBlueBackgroundText, PinkBackgroundText } from '../Styling/TextStyling';
 
-// /////////////// STYLING //////////////////////// //
+// //////////// SECTION SPECIFIC STYLING ///////////// //
 
 export const Section = styled.section`
-background: green;
-height: 40px;
-color: #FFD93D;
-text-align:center;
+background: lightblue;
+height: 100%;
+color: yellow;
+text-align: left;
 display: flex;
 flex-direction: column;
-align-items: center;
-justify-content: center;
+justify-content: left;
+padding: 24px;
 `;
+
 // /////////////// COMPONENT //////////////////////// //
 
 export const Sec2Tech = () => {
   return (
     <Section>
-      <h1>Sec2Tech</h1>
+      <SectionTitle>Tech</SectionTitle>
+      <div className="thingsiknow">
+        <ParagraphText>
+            HTML, CSS, Flexbox,<PinkBackgroundText>JavaScript,</PinkBackgroundText> ES6, JSX, React,
+            React Hooks, Redux, Node.js, Mongo DB, Web Accessibly,
+            API:s, <DarkBlueBackgroundText>mob-programming,</DarkBlueBackgroundText> React,
+            pair-programming, <BlueBackgroundText>Github.</BlueBackgroundText>
+        </ParagraphText>
+      </div>
     </Section>
   );
 };
