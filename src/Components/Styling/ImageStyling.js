@@ -12,7 +12,7 @@ export const ProfileImage = styled.img`
   `;
 
 export const ProjectImage = styled.img`
-  width: 200px; 
+  width: 100%; 
   height: auto;
   object-fit: cover;
 `;

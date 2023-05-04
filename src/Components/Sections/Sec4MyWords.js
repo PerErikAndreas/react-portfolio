@@ -7,15 +7,15 @@ import { ParagraphText, SectionTitle } from '../Styling/TextStyling';
 // //////////// SECTION SPECIFIC STYLING ///////////// //
 
 export const Section = styled.section`
-background: yellow;
-height: 100%;
-color: #FFD93D;
-text-align:center;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-`;
+  background: yellow;
+  height: 100%;
+  color: #FFD93D;
+  text-align:center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  `;
 // /////////////// COMPONENT //////////////////////// //
 
 export const Sec4MyWords = () => {

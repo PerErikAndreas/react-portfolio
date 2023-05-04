@@ -10,11 +10,11 @@ export const Section = styled.section`
 background: lightblue;
 height: 100%;
 color: yellow;
-text-align: left;
+text-align: center;
 display: flex;
 flex-direction: column;
 justify-content: left;
-padding: 24px;
+padding: 0px 24px 90px 24px;
 `;
 
 // /////////////// COMPONENT //////////////////////// //

@@ -3,7 +3,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import AndreasImage from '../Images/AndreasImage.jpeg';
-import { SectionTitle } from '../Styling/TextStyling';
+import { SectionTitle, JobTitleStyling, NameStyling, ParagraphText, PlusTextStyling } from '../Styling/TextStyling';
 import { ProfileImage } from '../Styling/ImageStyling';
 
 // //////////// SECTION SPECIFIC STYLING ///////////// //
@@ -26,14 +26,14 @@ export const Sec6TimeToTalk = () => {
     <Section>
       <SectionTitle>Time to talk</SectionTitle>
       <ProfileImage src={AndreasImage} alt="Profile" />
-      <h2>Andreas Axelsson</h2>
-      <h2>Frontend developer</h2>
-      <h3>+ background in retail</h3>
-      <h3>and pedagogy</h3>
-      <h3 className="contact">
+      <NameStyling>Andreas Axelsson</NameStyling>
+      <JobTitleStyling>Frontend developer</JobTitleStyling>
+      <PlusTextStyling>+ background in retail</PlusTextStyling>
+      <PlusTextStyling>and pedagogy</PlusTextStyling>
+      <ParagraphText>
             +46(0)702444938
             pererikandreas@gmail.com
-      </h3>
+      </ParagraphText>
     </Section>
   );
 };

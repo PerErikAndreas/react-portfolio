@@ -7,37 +7,40 @@ import styled from 'styled-components';
 // NAME STYLING
 export const NameStyling = styled.h1`
     color: #0B24F5;
-    font-family: SatoshiBold;
+    font-family: Satoshi;
     font-weight: 700;
     font-size: 28px;
     line-height: 37.8px;
+    margin: 0;
     `;
 
 // JOBTITLE STYLING
 export const JobTitleStyling = styled.h3`
     color: #000000;
-    font-family: SatoshiBold;
+    font-family: Satoshi;
     font-weight: 900;
     font-size: 32px;
     line-height: 43.2px;
+    margin: 0;
     `;
 
 // + TEXT STYLING
 export const PlusTextStyling = styled.h4`
     color: #565656;
-    font-family: SatoshiBold;
-    font-weight: 900;
-    font-size: 32px;
-    line-height: 43.2px;
+    font-family: Satoshi;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32.4px;
+    margin: 0;
     `;
 
 // SECTION TITLES
 export const SectionTitle = styled.h2`
     color: #0B24F5;
-    font-family: SatoshiBold;
+    font-family: Satoshi;
     font-weight: 700;
-    font-size: 28px;
-    line-height: 37.8px;
+    font-size: 80px;
+    line-height: 108px;
     `;
 
 // PARAGRAPH STYLING
@@ -93,11 +96,22 @@ export const BlackBackgroundText = styled.p`
     display: inline;
     `;
 
+// GREENBACKGROUND TEXT
+export const GreenBackgroundText = styled.p`
+    color: #FFFFFF;
+    background-color: #6DB486;
+    font-family: EB Garamond;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28.71px;
+    display: inline;
+    `;
+
 // PROJECT TITLES
 export const ProjectTitle = styled.h2`
     color: #000000;
-    font-family: SatoshiBold;
-    font-weight: 700;
-    font-size: 25px;
-    line-height: 37.8px;
+    font-family: Satoshi;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 43.2px;
     `;
