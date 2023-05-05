@@ -31,7 +31,7 @@ export const PlusTextStyling = styled.h4`
     font-weight: 500;
     font-size: 24px;
     line-height: 32.4px;
-    margin: 0;
+    margin-bottom: 40px;
     `;
 
 // SECTION TITLES
@@ -41,6 +41,7 @@ export const SectionTitle = styled.h2`
     font-weight: 700;
     font-size: 80px;
     line-height: 108px;
+    margin: 35px;
     `;
 
 // PARAGRAPH STYLING
@@ -50,6 +51,7 @@ export const ParagraphText = styled.p`
     font-weight: 400;
     font-size: 22px;
     line-height: 28.71px;
+
     `;
 
 // BLUEBACKGROUND TEXT
@@ -114,4 +116,5 @@ export const ProjectTitle = styled.h2`
     font-weight: 900;
     font-size: 32px;
     line-height: 43.2px;
+    margin: 20px 0 15px 0;
     `;

@@ -7,7 +7,7 @@ import { ParagraphText, SectionTitle, BlueBackgroundText, DarkBlueBackgroundText
 // //////////// SECTION SPECIFIC STYLING ///////////// //
 
 export const Section = styled.section`
-background: sandybrown;
+background: #FDF2E4;
 height: 100%;
 color: #FFD93D;
 text-align:center;
@@ -15,6 +15,11 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
+`;
+
+export const List = styled.ul`
+  list-style-type: none;
+  padding-left: 0;
 `;
 // /////////////// COMPONENT //////////////////////// //
 
@@ -24,29 +29,37 @@ export const Sec5Skills = () => {
       <SectionTitle>Skills</SectionTitle>
       <PinkBackgroundText>Code</PinkBackgroundText>
       <ParagraphText>
-          HTML 5
-          CSS3
-          Javascript ES6
-          GitHub
-          React
+        <List lang="en">
+          <li lang="en">HTML 5</li>
+          <li lang="en">CSS3</li>
+          <li lang="en">Javascript ES6</li>
+          <li lang="en">React</li>
+          <li lang="en">JSX</li>
+        </List>
       </ParagraphText>
       <BlueBackgroundText>Toolbox</BlueBackgroundText>
       <ParagraphText>
-          Adobe Photoshop
-          Adobe Illustrator
-          Figma
-          Slack
-          Postman
+        <List lang="en">
+          <li lang="en">Adobe Photoshop</li>
+          <li lang="en">Adobe Illustrator</li>
+          <li lang="en">Figma</li>
+          <li lang="en">Slack</li>
+          <li lang="en">Postman</li>
+        </List>
       </ParagraphText>
       <DarkBlueBackgroundText>More</DarkBlueBackgroundText>
       <ParagraphText>
-          Agile methdology
+        <List lang="en">
+          <li lang="en">Agile methdology</li>
+        </List>
       </ParagraphText>
       <GreenBackgroundText>Upcomming</GreenBackgroundText>
       <ParagraphText>
-          Node.js
-          React
-          Redux
+        <List lang="en">
+          <li lang="en">Node.js</li>
+          <li lang="en">React</li>
+          <li lang="en">Redux</li>
+        </List>
       </ParagraphText>
     </Section>
   );

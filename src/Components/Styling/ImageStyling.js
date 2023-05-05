@@ -17,3 +17,13 @@ export const ProjectImage = styled.img`
   object-fit: cover;
 `;
 
+export const Icons = styled.img`
+  width: 32px;
+  height: 32px;
+  filter: invert(97%) sepia(1%) saturate(2529%) hue-rotate(235deg) brightness(109%) contrast(63%);
+
+  &:hover {
+    filter: invert(0%) sepia(8%) saturate(7500%) hue-rotate(355deg) brightness(103%) contrast(110%);
+  }
+`;
+

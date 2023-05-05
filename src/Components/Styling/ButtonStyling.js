@@ -41,3 +41,25 @@ export const BlueButton = styled.button`
         color: #FFFFFF;
     }
 `;
+
+export const YellowButton = styled.button`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 12px 12px 12px;
+    background: #F5F5F5;
+    border-radius: 40px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+    border: none;
+    font-family: SatoshiMedium;
+    text-decoration: none;
+
+    &:hover {
+        background: #FFD338;
+        color: #000000;
+    }
+`;
+
