@@ -9,6 +9,7 @@ export const ProfileImage = styled.img`
   width: 164px; 
   height: 164px;
   object-fit: cover;
+  border: solid black 1px;
   `;
 
 export const ProjectImage = styled.img`
@@ -30,6 +31,6 @@ export const Icons = styled.img`
 
 export const BackgroundImage = styled.img`
   width: 100%; 
-  height: auto;
+  height: 520px; 
   object-fit: cover;
 `;

@@ -3,7 +3,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { ProjectImage } from 'Components/Styling/ImageStyling';
-import { ParagraphText, SectionTitle, ProjectTitle } from '../Styling/TextStyling';
+import { ParagraphText, SectionTitle2, ProjectTitle } from '../Styling/TextStyling';
 import { YellowButton } from '../Styling/ButtonStyling';
 import StellaniIMG from '../Images/StellaniIMG.jpeg';
 
@@ -13,10 +13,10 @@ export const Section = styled.section`
   background: #FCEDEA;
   height: 100%;
   color: #FFD93D;
-  text-align:center;
+  text-align: left;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   justify-content: center;
   padding: 0 24px 24px 24px;
   `;
@@ -26,7 +26,7 @@ export const Sec4MyWords = () => {
   return (
 
     <Section>
-      <SectionTitle>My Words</SectionTitle>
+      <SectionTitle2>My Words</SectionTitle2>
       <ProjectImage src={StellaniIMG} alt="Stellan my son" />
       <ProjectTitle>
         Coding and Creativity: A smoothie of Logic and Imagination.

@@ -41,7 +41,17 @@ export const SectionTitle = styled.h2`
     font-weight: 700;
     font-size: 80px;
     line-height: 108px;
-    margin: 35px;
+    margin: 35px 0 35px 0;
+    `;
+
+// SECTION TITLES2
+export const SectionTitle2 = styled.h2`
+    color: #EB5577;
+    font-family: Satoshi;
+    font-weight: 900;
+    font-size: 52px;
+    line-height: 78px;
+    margin: 35px auto 20px auto;
     `;
 
 // PARAGRAPH STYLING

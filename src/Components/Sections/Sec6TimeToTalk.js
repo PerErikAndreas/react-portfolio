@@ -7,7 +7,7 @@ import LinkedInIMG from '../Images/LinkedIn.svg';
 import GitHubIMG from '../Images/GitHubIMG.svg';
 import StackOverflowIMG from '../Images/StackOverflowIMG.svg';
 import InstagramIMG from '../Images/InstagramIMG.svg';
-import { SectionTitle, JobTitleStyling, NameStyling, ParagraphText, PlusTextStyling } from '../Styling/TextStyling';
+import { SectionTitle2, JobTitleStyling, NameStyling, ParagraphText, PlusTextStyling } from '../Styling/TextStyling';
 import { ProfileImage, Icons } from '../Styling/ImageStyling';
 
 // //////////// SECTION SPECIFIC STYLING ///////////// //
@@ -36,7 +36,7 @@ export const List = styled.ul`
 export const Sec6TimeToTalk = () => {
   return (
     <Section>
-      <SectionTitle>Time to talk</SectionTitle>
+      <SectionTitle2>Time to talk</SectionTitle2>
       <ProfileImage src={AndreasImage} alt="Profile" />
       <NameStyling>Andreas Axelsson</NameStyling>
       <JobTitleStyling>Frontend developer</JobTitleStyling>
