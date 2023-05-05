@@ -56,6 +56,7 @@ export const YellowButton = styled.button`
     border: none;
     font-family: SatoshiMedium;
     text-decoration: none;
+    margin: 20px 0 30px 0;
 
     &:hover {
         background: #FFD338;

@@ -20,6 +20,7 @@ justify-content: center;
 export const List = styled.ul`
   list-style-type: none;
   padding-left: 0;
+  margin: 18px 0 30px 0;
 `;
 // /////////////// COMPONENT //////////////////////// //
 

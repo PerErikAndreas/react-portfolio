@@ -3,12 +3,13 @@
 import React from 'react';
 import styled from 'styled-components';
 import { JobTitleStyling, NameStyling, ParagraphText, PlusTextStyling } from '../Styling/TextStyling';
-import { ProfileImage, Icons } from '../Styling/ImageStyling';
+import { ProfileImage, Icons, BackgroundImage } from '../Styling/ImageStyling';
 import AndreasImage from '../Images/AndreasImage.jpeg';
 import LinkedInIMG from '../Images/LinkedIn.svg';
 import GitHubIMG from '../Images/GitHubIMG.svg';
 import StackOverflowIMG from '../Images/StackOverflowIMG.svg';
 import InstagramIMG from '../Images/InstagramIMG.svg';
+import FamilyIMG from '../Images/FamilyIMG.JPG';
 
 // //////////// SECTION SPECIFIC STYLING ///////////// //
 
@@ -41,6 +42,7 @@ const ProfileImageStructure = styled.div`
 export const Sec1Presentation = () => {
   return (
     <Section>
+      <BackgroundImage src={FamilyIMG} alt="Family" />
       <ProfileImageStructure>
         <ProfileImage src={AndreasImage} alt="Profile" />
       </ProfileImageStructure>

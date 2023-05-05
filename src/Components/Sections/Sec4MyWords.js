@@ -2,8 +2,10 @@
 
 import React from 'react';
 import styled from 'styled-components';
-import { ParagraphText, SectionTitle } from '../Styling/TextStyling';
+import { ProjectImage } from 'Components/Styling/ImageStyling';
+import { ParagraphText, SectionTitle, ProjectTitle } from '../Styling/TextStyling';
 import { YellowButton } from '../Styling/ButtonStyling';
+import StellaniIMG from '../Images/StellaniIMG.jpeg';
 
 // //////////// SECTION SPECIFIC STYLING ///////////// //
 
@@ -25,6 +27,10 @@ export const Sec4MyWords = () => {
 
     <Section>
       <SectionTitle>My Words</SectionTitle>
+      <ProjectImage src={StellaniIMG} alt="Stellan my son" />
+      <ProjectTitle>
+        Coding and Creativity: A smoothie of Logic and Imagination.
+      </ProjectTitle>
       <ParagraphText>
         Since I started my journey to become a developer, I came to a few
         realizations (And no, its not that a child-component also can be a

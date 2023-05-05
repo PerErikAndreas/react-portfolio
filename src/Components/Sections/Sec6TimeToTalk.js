@@ -28,6 +28,8 @@ export const List = styled.ul`
   padding-left: 0;
   display: flex;
   justify-content: space-evenly;
+  margin: 40px 0 30px 0;
+
 `;
 // /////////////// COMPONENT //////////////////////// //
 
@@ -38,8 +40,7 @@ export const Sec6TimeToTalk = () => {
       <ProfileImage src={AndreasImage} alt="Profile" />
       <NameStyling>Andreas Axelsson</NameStyling>
       <JobTitleStyling>Frontend developer</JobTitleStyling>
-      <PlusTextStyling>+ background in retail</PlusTextStyling>
-      <PlusTextStyling>and pedagogy</PlusTextStyling>
+      <PlusTextStyling>+ background in retail and pedagogy</PlusTextStyling>
       <ParagraphText>
             +46(0)702444938
             pererikandreas@gmail.com

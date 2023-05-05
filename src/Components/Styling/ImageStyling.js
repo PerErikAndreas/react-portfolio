@@ -15,6 +15,7 @@ export const ProjectImage = styled.img`
   width: 100%; 
   height: auto;
   object-fit: cover;
+  margin-top: 10px;
 `;
 
 export const Icons = styled.img`
@@ -27,3 +28,8 @@ export const Icons = styled.img`
   }
 `;
 
+export const BackgroundImage = styled.img`
+  width: 100%; 
+  height: auto;
+  object-fit: cover;
+`;
