@@ -1,7 +1,7 @@
 // /////////////// IMPORTS //////////////////////// //
 
 import React from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import AndreasImage from '../Images/AndreasImage.jpeg';
 import LinkedInIMG from '../Images/LinkedIn.svg';
 import GitHubIMG from '../Images/GitHubIMG.svg';
@@ -14,15 +14,15 @@ import { ProfileImage, Icons } from '../Styling/ImageStyling';
 // //////////// SECTION SPECIFIC STYLING ///////////// //
 
 export const Section = styled.section`
-background: #F5F5F5;
-height: 100%;
-color: #FFD93D;
-text-align: left;
-display: flex;
-flex-direction: column;
-justify-content: left;
-padding: 24px;
-`;
+  background: #F5F5F5;
+  height: 100%;
+  color: #FFD93D;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding: 24px;
+  `;
 
 export const List = styled.ul`
   list-style-type: none;
@@ -30,8 +30,51 @@ export const List = styled.ul`
   display: flex;
   justify-content: space-evenly;
   margin: 60px 0 60px 0;
+  `;
 
+const wavyLineAnimation = keyframes`
+  0% {
+    transform: scaleX(1) translateX(0);
+  }
+  25% {
+    transform: scaleX(1.5) translateX(-0px);
+  }
+  50% {
+    transform: scaleX(1) translateX(0);
+  }
+  75% {
+    transform: scaleX(0.5) translateX(10px);
+  }
+  100% {
+    transform: scaleX(1) translateX(0);
+  }
 `;
+
+export const Link = styled.a`
+  position: relative;
+  display: inline-block;
+  color: blue;
+  text-decoration: none;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 70%;
+    height: 2px;
+    background-color: blue;
+    transform: scaleX(0); /* Start with no visible line */
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  &:hover::after {
+    transform: scaleX(1); /* Expand the line on hover */
+    animation: ${wavyLineAnimation} 2s linear infinite; /* Add animation effect */
+  }
+`;
+
 // /////////////// COMPONENT //////////////////////// //
 
 export const Sec6TimeToTalk = () => {
@@ -51,10 +94,10 @@ export const Sec6TimeToTalk = () => {
           <PlusTextStyling>+ background in retail and pedagogy
           </PlusTextStyling>
           <ParagraphText>
-            <a href={`tel:${phoneNumber}`}>{phoneNumber}</a>
+            <Link href={`tel:${phoneNumber}`}>{phoneNumber}</Link>
           </ParagraphText>
           <ParagraphText>
-            <a href={`mailto:${email}`}>{email}</a>
+            <Link href={`mailto:${email}`}>{email}</Link>
           </ParagraphText>
         </InfoStructure>
       </ProfileAndInfoStructure>

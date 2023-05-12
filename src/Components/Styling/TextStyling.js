@@ -130,5 +130,5 @@ export const ProjectTitle = styled.h2`
 
     @media screen and (min-width: 668px) {
     margin-top: 5px;
-  }
+    }
     `;

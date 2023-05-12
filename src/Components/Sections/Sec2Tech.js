@@ -7,15 +7,23 @@ import { ParagraphText, SectionTitle, BlueBackgroundText, DarkBlueBackgroundText
 // //////////// SECTION SPECIFIC STYLING ///////////// //
 
 export const Section = styled.section`
-background: #EDFFFF;
-height: 100%;
-color: yellow;
-text-align: center;
-display: flex;
-flex-direction: column;
-justify-content: left;
-padding: 0px 24px 90px 24px;
-`;
+  background: #EDFFFF;
+  height: 100%;
+  color: yellow;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding: 0px 24px 90px 24px;
+
+  @media screen and (min-width: 668px) {
+    padding: 0 10% 90px 10%;
+  }
+
+  @media screen and (min-width: 1024px) {
+    padding: 0 25% 90px 25%;
+  }
+  `;
 
 // /////////////// COMPONENT //////////////////////// //
 

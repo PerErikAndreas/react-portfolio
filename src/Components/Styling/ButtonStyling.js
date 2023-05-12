@@ -1,7 +1,11 @@
+// /////////////// IMPORTS //////////////////////// //
+
 import styled from 'styled-components';
 
+// ////////////// BUTTON STYLING /////////////// //
+
 export const PinkButton = styled.button`
-   display: flex;
+    display: flex;
     flex-direction: row;
     align-items: center;
     padding: 12px 12px 12px 12px;
@@ -16,10 +20,10 @@ export const PinkButton = styled.button`
     text-decoration: none;
 
     &:hover {
-        background: #EB5577;
-        color: #FFFFFF;
+    background: #EB5577;
+    color: #FFFFFF;
     }
-`;
+    `;
 
 export const BlueButton = styled.button`
     display: flex;
@@ -37,10 +41,10 @@ export const BlueButton = styled.button`
     text-decoration: none;
 
     &:hover {
-        background: #0B24F5;
-        color: #FFFFFF;
+    background: #0B24F5;
+    color: #FFFFFF;
     }
-`;
+    `;
 
 export const YellowButton = styled.button`
     display: flex;
@@ -59,8 +63,8 @@ export const YellowButton = styled.button`
     margin: 20px 0 30px 0;
 
     &:hover {
-        background: #FFD338;
-        color: #000000;
+    background: #FFD338;
+    color: #000000;
     }
-`;
+    `;
 

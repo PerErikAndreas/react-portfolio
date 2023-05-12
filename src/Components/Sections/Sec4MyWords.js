@@ -17,7 +17,16 @@ export const Section = styled.section`
   align-items: left;
   justify-content: center;
   padding: 0 24px 24px 24px;
+
+  @media screen and (min-width: 668px) {
+    padding: 0 10% 24px 10%;
+  }
+
+  @media screen and (min-width: 1024px) {
+    padding: 0 25% 24px 25%;
+  }
   `;
+
 // /////////////// COMPONENT //////////////////////// //
 
 export const Sec4MyWords = () => {

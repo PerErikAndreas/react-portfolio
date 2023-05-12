@@ -7,34 +7,46 @@ import { ParagraphText, SectionTitle, BlueBackgroundText, DarkBlueBackgroundText
 // //////////// SECTION SPECIFIC STYLING ///////////// //
 
 export const Section = styled.section`
-background: #FDF2E4;
-height: 100%;
-color: #FFD93D;
-text-align:center;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-`;
+  background: #FDF2E4;
+  height: 100%;
+  color: #FFD93D;
+  text-align:center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  `;
 
 export const List = styled.ul`
   list-style-type: none;
   padding-left: 0;
   margin: 18px 0 30px 0;
-`;
+  `;
 
 export const SkillFrameStructure = styled.div`
-@media screen and (min-width: 668px) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr; 
-    gap: 90px;
+  @media screen and (min-width: 668px) {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr; 
+  gap: 90px;
   }
-`;
+
+  @media screen and (min-width: 1024px) {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0fr; 
+  gap: 90px;
+  margin-bottom: 50px;
+  }
+  `;
 
 export const SkillFrame = styled.div`
-text-align: left;
-`;
+  text-align: center;
+
+  @media screen and (min-width: 668px) {
+  text-align: left;
+  }
+  `;
 
 // /////////////// COMPONENT //////////////////////// //
 
