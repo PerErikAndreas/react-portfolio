@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import { JobTitleStyling, NameStyling, ParagraphText, PlusTextStyling } from '../Styling/TextStyling';
 import { ProfileImage, Icons, BackgroundImage } from '../Styling/ImageStyling';
 import AndreasImage from '../Images/AndreasImage.jpeg';
-import LinkedInIMG from '../Images/LinkedIn.svg';
+import LinkedInIMG from '../Images/LinkedInIMG.svg';
 import GitHubIMG from '../Images/GitHubIMG.svg';
 import StackOverflowIMG from '../Images/StackOverflowIMG.svg';
 import InstagramIMG from '../Images/InstagramIMG.svg';
