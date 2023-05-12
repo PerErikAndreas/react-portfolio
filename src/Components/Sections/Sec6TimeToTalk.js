@@ -3,7 +3,7 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import AndreasImage from '../Images/AndreasImage.jpeg';
-import LinkedInIMG from '../Images/LinkedIn.svg';
+import LinkedInIMG from '../Images/LinkedInIMG.svg';
 import GitHubIMG from '../Images/GitHubIMG.svg';
 import StackOverflowIMG from '../Images/StackOverflowIMG.svg';
 import InstagramIMG from '../Images/InstagramIMG.svg';
