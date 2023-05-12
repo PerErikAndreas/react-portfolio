@@ -7,6 +7,7 @@ import LinkedInIMG from '../Images/LinkedIn.svg';
 import GitHubIMG from '../Images/GitHubIMG.svg';
 import StackOverflowIMG from '../Images/StackOverflowIMG.svg';
 import InstagramIMG from '../Images/InstagramIMG.svg';
+import { ProfileAndInfoStructure, InfoStructure, ProfileImageStructure } from './Sec1Presentation';
 import { SectionTitle2, JobTitleStyling, NameStyling, ParagraphText, PlusTextStyling } from '../Styling/TextStyling';
 import { ProfileImage, Icons } from '../Styling/ImageStyling';
 
@@ -28,23 +29,35 @@ export const List = styled.ul`
   padding-left: 0;
   display: flex;
   justify-content: space-evenly;
-  margin: 40px 0 30px 0;
+  margin: 60px 0 60px 0;
 
 `;
 // /////////////// COMPONENT //////////////////////// //
 
 export const Sec6TimeToTalk = () => {
+  const email = 'pererikandreas@gmail.com';
+  const phoneNumber = '+46(0)702444938';
+
   return (
     <Section>
       <SectionTitle2>Time to talk</SectionTitle2>
-      <ProfileImage src={AndreasImage} alt="Profile" />
-      <NameStyling>Andreas Axelsson</NameStyling>
-      <JobTitleStyling>Frontend developer</JobTitleStyling>
-      <PlusTextStyling>+ background in retail and pedagogy</PlusTextStyling>
-      <ParagraphText>
-            +46(0)702444938
-            pererikandreas@gmail.com
-      </ParagraphText>
+      <ProfileAndInfoStructure>
+        <ProfileImageStructure>
+          <ProfileImage src={AndreasImage} alt="Profile" />
+        </ProfileImageStructure>
+        <InfoStructure>
+          <NameStyling>Andreas Axelsson</NameStyling>
+          <JobTitleStyling>Frontend Developer</JobTitleStyling>
+          <PlusTextStyling>+ background in retail and pedagogy
+          </PlusTextStyling>
+          <ParagraphText>
+            <a href={`tel:${phoneNumber}`}>{phoneNumber}</a>
+          </ParagraphText>
+          <ParagraphText>
+            <a href={`mailto:${email}`}>{email}</a>
+          </ParagraphText>
+        </InfoStructure>
+      </ProfileAndInfoStructure>
       <nav aria-label="linkbar">
         <List>
           <li>

@@ -16,7 +16,12 @@ export const ProjectImage = styled.img`
   width: 100%; 
   height: auto;
   object-fit: cover;
-  margin-top: 10px;
+
+  @media screen and (min-width: 668px) {
+    width: 190px; 
+    height: 280px;
+    object-fit: cover;  
+    }
 `;
 
 export const Icons = styled.img`
@@ -31,6 +36,6 @@ export const Icons = styled.img`
 
 export const BackgroundImage = styled.img`
   width: 100%; 
-  height: 520px; 
+  height: 412px; 
   object-fit: cover;
 `;

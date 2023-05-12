@@ -127,4 +127,8 @@ export const ProjectTitle = styled.h2`
     font-size: 32px;
     line-height: 43.2px;
     margin: 20px 0 15px 0;
+
+    @media screen and (min-width: 668px) {
+    margin-top: 5px;
+  }
     `;

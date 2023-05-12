@@ -22,46 +22,70 @@ export const List = styled.ul`
   padding-left: 0;
   margin: 18px 0 30px 0;
 `;
+
+export const SkillFrameStructure = styled.div`
+@media screen and (min-width: 668px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr; 
+    gap: 90px;
+  }
+`;
+
+export const SkillFrame = styled.div`
+text-align: left;
+`;
+
 // /////////////// COMPONENT //////////////////////// //
 
 export const Sec5Skills = () => {
   return (
     <Section>
       <SectionTitle>Skills</SectionTitle>
-      <PinkBackgroundText>Code</PinkBackgroundText>
-      <ParagraphText>
-        <List lang="en">
-          <li lang="en">HTML 5</li>
-          <li lang="en">CSS3</li>
-          <li lang="en">Javascript ES6</li>
-          <li lang="en">React</li>
-          <li lang="en">JSX</li>
-        </List>
-      </ParagraphText>
-      <BlueBackgroundText>Toolbox</BlueBackgroundText>
-      <ParagraphText>
-        <List lang="en">
-          <li lang="en">Adobe Photoshop</li>
-          <li lang="en">Adobe Illustrator</li>
-          <li lang="en">Figma</li>
-          <li lang="en">Slack</li>
-          <li lang="en">Postman</li>
-        </List>
-      </ParagraphText>
-      <DarkBlueBackgroundText>More</DarkBlueBackgroundText>
-      <ParagraphText>
-        <List lang="en">
-          <li lang="en">Agile methdology</li>
-        </List>
-      </ParagraphText>
-      <GreenBackgroundText>Upcomming</GreenBackgroundText>
-      <ParagraphText>
-        <List lang="en">
-          <li lang="en">Node.js</li>
-          <li lang="en">React</li>
-          <li lang="en">Redux</li>
-        </List>
-      </ParagraphText>
+      <SkillFrameStructure>
+        <SkillFrame>
+          <PinkBackgroundText>Code</PinkBackgroundText>
+          <ParagraphText>
+            <List lang="en">
+              <li lang="en">HTML 5</li>
+              <li lang="en">CSS3</li>
+              <li lang="en">Javascript ES6</li>
+              <li lang="en">React</li>
+              <li lang="en">JSX</li>
+            </List>
+          </ParagraphText>
+        </SkillFrame>
+        <SkillFrame>
+          <BlueBackgroundText>Toolbox</BlueBackgroundText>
+          <ParagraphText>
+            <List lang="en">
+              <li lang="en">Adobe Photoshop</li>
+              <li lang="en">Adobe Illustrator</li>
+              <li lang="en">Figma</li>
+              <li lang="en">Slack</li>
+              <li lang="en">Postman</li>
+            </List>
+          </ParagraphText>
+        </SkillFrame>
+        <SkillFrame>
+          <DarkBlueBackgroundText>More</DarkBlueBackgroundText>
+          <ParagraphText>
+            <List lang="en">
+              <li lang="en">Agile methdology</li>
+            </List>
+          </ParagraphText>
+        </SkillFrame>
+        <SkillFrame>
+          <GreenBackgroundText>Upcomming</GreenBackgroundText>
+          <ParagraphText>
+            <List lang="en">
+              <li lang="en">Node.js</li>
+              <li lang="en">React</li>
+              <li lang="en">Redux</li>
+            </List>
+          </ParagraphText>
+        </SkillFrame>
+      </SkillFrameStructure>
     </Section>
   );
 };

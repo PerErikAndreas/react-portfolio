@@ -2,10 +2,8 @@
 
 import React from 'react';
 import styled from 'styled-components';
-import { ProjectImage } from 'Components/Styling/ImageStyling';
 import { ParagraphText, SectionTitle2, ProjectTitle } from '../Styling/TextStyling';
 import { YellowButton } from '../Styling/ButtonStyling';
-import StellaniIMG from '../Images/StellaniIMG.jpeg';
 
 // //////////// SECTION SPECIFIC STYLING ///////////// //
 
@@ -27,7 +25,6 @@ export const Sec4MyWords = () => {
 
     <Section>
       <SectionTitle2>My Words</SectionTitle2>
-      <ProjectImage src={StellaniIMG} alt="Stellan my son" />
       <ProjectTitle>
         Coding and Creativity: A smoothie of Logic and Imagination.
       </ProjectTitle>

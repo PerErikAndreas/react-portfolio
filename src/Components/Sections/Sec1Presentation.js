@@ -44,9 +44,15 @@ padding-left: 0;
 display: flex;
 justify-content: space-evenly;
 margin: 40px 0 30px 0;
+
+@media screen and (min-width: 668px) {
+justify-content: flex-start;
+padding-left: 10%;
+gap: 40px;
+  }
 `;
 
-const ProfileImageStructure = styled.div`
+export const ProfileImageStructure = styled.div`
 display: flex;
 justify-content: center;
 margin: 50px 0 30px 0;
@@ -56,7 +62,7 @@ margin: 50px 0 30px 0;
   }
 `;
 
-const InfoStructure = styled.div`
+export const InfoStructure = styled.div`
 display: flex;
 flex-direction: column;
 
@@ -65,7 +71,14 @@ margin: 50px 0 0 10px;
   }
 `;
 
-const ProfileAndInfoStructure = styled.div`
+const ParagraphTextStructure = styled.div`
+
+@media screen and (min-width: 668px) {
+padding: 0 10% 5% 10%;
+  }
+`;
+
+export const ProfileAndInfoStructure = styled.div`
 display: flex;
 flex-direction: column;
 
@@ -94,7 +107,8 @@ export const Sec1Presentation = () => {
             </PlusTextStyling>
           </InfoStructure>
         </ProfileAndInfoStructure>
-        <ParagraphText>
+        <ParagraphTextStructure>
+          <ParagraphText>
           Andreas has a background in retail, teaching,
           music and snowboarding and has therefor always
           needed to be creative, structured and goal-oriented.
@@ -104,7 +118,8 @@ export const Sec1Presentation = () => {
           high responsibility and dedication,
           but also with character. Its as if he put his
           signature on every work, on every project.
-        </ParagraphText>
+          </ParagraphText>
+        </ParagraphTextStructure>
         <nav aria-label="linkbar">
           <List>
             <li>
