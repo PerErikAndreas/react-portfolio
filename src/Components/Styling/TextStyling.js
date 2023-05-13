@@ -7,7 +7,7 @@ import styled from 'styled-components';
 // NAME STYLING
 export const NameStyling = styled.h1`
     color: #0B24F5;
-    font-family: Satoshi;
+    font-family: Satoshi-bold;
     font-weight: 700;
     font-size: 28px;
     line-height: 37.8px;
