@@ -19,7 +19,7 @@ export const JobTitleStyling = styled.h3`
     color: #000000;
     font-family: Satoshi-Black;
     font-weight: 900;
-    font-size: 32px;
+    font-size: 30px;
     line-height: 43.2px;
     margin: 0;
     `;
