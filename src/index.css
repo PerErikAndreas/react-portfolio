@@ -1,6 +1,28 @@
+/*///////////////////////////// FONTS AND BODY //////////////////////////*/
+
+@font-face {
+  font-family: SatoshiBold;
+  font-weight: bold;
+  src: url('./fonts/Satoshi/Fonts/OTF/Satoshi-Bold.otf');
+}
+
+@font-face {
+  font-family: SatoshiMedium;
+  font-weight: medium;
+  src: url('./fonts/Satoshi/Fonts/OTF/Satoshi-Medium.otf');
+}
+
+@font-face {
+  font-family: SatoshiBlack;
+  font-weight: bolder;
+  src: url('./fonts/Satoshi/Fonts/OTF/Satoshi-Black.otf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  font-family: 'Satoshi', sans-serif, Sat-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
