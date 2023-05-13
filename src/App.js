@@ -12,17 +12,17 @@ import SatoshiMediumOTF from './Fonts/Satoshi/Fonts/OTF/Satoshi-Medium.otf';
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
-    font-family: 'Satoshi';
+    font-family: 'Satoshi-Black';
     src: url(${SatoshiBlackOTF}) format('opentype'),
   }
 
   @font-face {
-    font-family: 'Satoshi';
+    font-family: 'Satoshi-Bold';
     src: url(${SatoshiBoldOTF}) format('opentype'),
   }
 
   @font-face {
-    font-family: 'Satoshi';
+    font-family: 'Satoshi-Medium';
     src: url(${SatoshiMediumOTF}) format('opentype'),
   }
 `;
