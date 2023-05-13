@@ -7,7 +7,7 @@ import styled from 'styled-components';
 // NAME STYLING
 export const NameStyling = styled.h1`
     color: #0B24F5;
-    font-family: Satoshi;
+    font-family: Satoshi-Bold;
     font-weight: 700;
     font-size: 28px;
     line-height: 37.8px;
@@ -17,7 +17,7 @@ export const NameStyling = styled.h1`
 // JOBTITLE STYLING
 export const JobTitleStyling = styled.h3`
     color: #000000;
-    font-family: Satoshi;
+    font-family: Satoshi-Black;
     font-weight: 900;
     font-size: 32px;
     line-height: 43.2px;
@@ -27,7 +27,7 @@ export const JobTitleStyling = styled.h3`
 // + TEXT STYLING
 export const PlusTextStyling = styled.h4`
     color: #565656;
-    font-family: Satoshi;
+    font-family: Satoshi-Medium;
     font-weight: 500;
     font-size: 24px;
     line-height: 32.4px;
@@ -37,7 +37,7 @@ export const PlusTextStyling = styled.h4`
 // SECTION TITLES
 export const SectionTitle = styled.h2`
     color: #0B24F5;
-    font-family: Satoshi;
+    font-family: Satoshi-Bold;
     font-weight: 700;
     font-size: 80px;
     line-height: 108px;
@@ -47,7 +47,7 @@ export const SectionTitle = styled.h2`
 // SECTION TITLES2
 export const SectionTitle2 = styled.h2`
     color: #EB5577;
-    font-family: Satoshi;
+    font-family: Satoshi-Bold;
     font-weight: 900;
     font-size: 52px;
     line-height: 78px;
@@ -122,7 +122,7 @@ export const GreenBackgroundText = styled.p`
 // PROJECT TITLES
 export const ProjectTitle = styled.h2`
     color: #000000;
-    font-family: Satoshi;
+    font-family: Satoshi-Black;
     font-weight: 900;
     font-size: 32px;
     line-height: 43.2px;
