@@ -1,13 +1,19 @@
 // /////////////// IMPORTS //////////////////////// //
 
 import styled from 'styled-components';
+import SatoshiWoff from '../fonts/satoshi.woff';
+import SatoshiWoff2 from '../fonts/satoshi.woff2';
 
 // ////////////// TEXT STYLING /////////////// //
 
 // NAME STYLING
 export const NameStyling = styled.h1`
+ @font-face {
+    font-family: 'Satoshi';
+    src: url(${SatoshiWoff2}) format('woff2'),
+         url(${SatoshiWoff}) format('woff');
+  }
     color: #0B24F5;
-    font-family: Satoshi;
     font-weight: 700;
     font-size: 28px;
     line-height: 37.8px;
