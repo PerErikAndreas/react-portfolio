@@ -1,8 +1,8 @@
 // /////////////// IMPORTS //////////////////////// //
 
 import styled from 'styled-components';
-import SatoshiWoff from '../fonts/satoshi.woff';
-import SatoshiWoff2 from '../fonts/satoshi.woff2';
+import SatoshiWoff from './Fonts/WEB/fonts/Satoshi-Black.woff';
+import SatoshiWoff2 from './Fonts/WEB/fonts/Satoshi-Black.woff2';
 
 // ////////////// TEXT STYLING /////////////// //
 
