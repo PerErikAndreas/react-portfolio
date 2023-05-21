@@ -16,7 +16,7 @@ export const PinkButton = styled.button`
     font-size: 20px;
     line-height: 27px;
     border: none;
-    font-family: SatoshiMedium;
+    font-family: Futura;
     text-decoration: none;
 
     &:hover {
@@ -37,7 +37,7 @@ export const BlueButton = styled.button`
     font-size: 20px;
     line-height: 27px;
     border: none;
-    font-family: SatoshiMedium;
+    font-family: Futura;
     text-decoration: none;
 
     &:hover {
@@ -58,7 +58,7 @@ export const YellowButton = styled.button`
     font-size: 20px;
     line-height: 27px;
     border: none;
-    font-family: SatoshiMedium;
+    font-family: Futura;
     text-decoration: none;
     margin: 20px 0 30px 0;
 
