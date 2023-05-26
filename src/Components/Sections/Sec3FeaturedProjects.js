@@ -116,7 +116,7 @@ export const Sec3FeaturedProjects = () => {
           <ProjectImage src={AuthIMG} alt="Authenticator" />
           <TabletStructure>
             <ProjectTextStructure>
-              <ProjectTitle>Authenticator React + Node.js + SaSS</ProjectTitle>
+              <ProjectTitle>Login to own page - React + Node.js + SaSS</ProjectTitle>
               <ParagraphText>
         This weeks task was to make a fullstack project.
         We built our own Api, created the frontend.
