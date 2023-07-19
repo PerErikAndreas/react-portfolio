@@ -118,7 +118,7 @@ export const Sec3FeaturedProjects = () => {
           <ProjectImage src={FinalTodoIMG} alt="Final Todo" />
           <TabletStructure>
             <ProjectTextStructure>
-              <ProjectTitle>TodoQuest - Final Projec.
+              <ProjectTitle>TodoQuest - Final Project.
                 React + MongoDB + OpenAI + Redux + styled components
               </ProjectTitle>
               <ParagraphText>
