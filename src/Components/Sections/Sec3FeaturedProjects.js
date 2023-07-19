@@ -118,10 +118,12 @@ export const Sec3FeaturedProjects = () => {
           <ProjectImage src={FinalTodoIMG} alt="Final Todo" />
           <TabletStructure>
             <ProjectTextStructure>
-              <ProjectTitle>TodoQuest - Final Project</ProjectTitle>
+              <ProjectTitle>TodoQuest - Final Projec.
+                React + MongoDB + OpenAI + Redux + styled components
+              </ProjectTitle>
               <ParagraphText>
-        This fullstack-project I made with my fellow alumni Annika
-        at the Technigo Web Developer Bootcamp. A AI-powered and gamified Todo-app.
+        This is my final project at the Technigo Web Developer Bootcamp.
+        I made this full-stack, AI-powered and gamified Todo-app with my fellow alumni Annika.
         Check it out! - Also check out our planing in <Link href="https://www.figma.com/file/oTeXpdVgQrH9JwlIx9U0AP/ANNIKA-ANDREAS-SLUTPROJEKT?type=design&node-id=0%3A1&mode=design&t=atZkiCwpvWZpFYY0-1">Figma</Link>
               </ParagraphText>
             </ProjectTextStructure>
