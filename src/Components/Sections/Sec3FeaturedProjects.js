@@ -118,9 +118,7 @@ export const Sec3FeaturedProjects = () => {
           <ProjectImage src={FinalTodoIMG} alt="Final Todo" />
           <TabletStructure>
             <ProjectTextStructure>
-              <ProjectTitle>TodoQuest - Final Project.
-                React + MongoDB + OpenAI + Redux + styled components
-              </ProjectTitle>
+              <ProjectTitle>TodoQuest - Final Project.</ProjectTitle>
               <ParagraphText>
         This is my final project at the Technigo Web Developer Bootcamp.
         I made this full-stack, AI-powered and gamified Todo-app with my fellow alumni Annika.
@@ -130,9 +128,11 @@ export const Sec3FeaturedProjects = () => {
             <BlackBackgroundAndProjectButtonStucture>
               <BlackBackgroundStructure>
                 <BlackBackgroundText>Redux</BlackBackgroundText>
-                <BlackBackgroundText>AI</BlackBackgroundText>
+                <BlackBackgroundText>OpenAI</BlackBackgroundText>
                 <BlackBackgroundText>React</BlackBackgroundText>
-                <BlackBackgroundText>Node</BlackBackgroundText>
+                <BlackBackgroundText>Node.js</BlackBackgroundText>
+                <BlackBackgroundText>MongoDB</BlackBackgroundText>
+                <BlackBackgroundText>Styled Components</BlackBackgroundText>
               </BlackBackgroundStructure>
               <ProjectButtonStructure>
                 <a href="https://github.com/AnnikaSonnek/final-project-frontend" target="_blank" title="Link to the TodoQuest on GitHub" rel="noreferrer">
