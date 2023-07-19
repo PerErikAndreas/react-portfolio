@@ -132,7 +132,6 @@ export const Sec3FeaturedProjects = () => {
                 <BlackBackgroundText>React</BlackBackgroundText>
                 <BlackBackgroundText>Node.js</BlackBackgroundText>
                 <BlackBackgroundText>MongoDB</BlackBackgroundText>
-                <BlackBackgroundText>Styled Components</BlackBackgroundText>
               </BlackBackgroundStructure>
               <ProjectButtonStructure>
                 <a href="https://github.com/AnnikaSonnek/final-project-frontend" target="_blank" title="Link to the TodoQuest on GitHub" rel="noreferrer">
