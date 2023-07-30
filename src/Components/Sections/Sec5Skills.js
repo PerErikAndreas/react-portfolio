@@ -64,6 +64,8 @@ export const Sec5Skills = () => {
               <li lang="en">Javascript ES6</li>
               <li lang="en">React</li>
               <li lang="en">JSX</li>
+              <li lang="en">Node.js</li>
+              <li lang="en">Redux</li>
             </List>
           </ParagraphText>
         </SkillFrame>
@@ -91,9 +93,8 @@ export const Sec5Skills = () => {
           <GreenBackgroundText>Upcomming</GreenBackgroundText>
           <ParagraphText>
             <List lang="en">
-              <li lang="en">Node.js</li>
-              <li lang="en">React</li>
-              <li lang="en">Redux</li>
+              <li lang="en">Tailwind</li>
+              <li lang="en">Docker</li>
             </List>
           </ParagraphText>
         </SkillFrame>
