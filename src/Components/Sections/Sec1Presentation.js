@@ -14,9 +14,9 @@ import FamilyIMG from '../Images/FamilyIMG.JPG';
 // //////////// SECTION SPECIFIC STYLING ///////////// //
 
 const Section1 = styled.section`
-  background: #ffffff;
+  background: #EEEEEE;
   height: 100%;
-  color: #FFD93D;
+  color: #FFFFFF;
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -36,7 +36,7 @@ const Section1 = styled.section`
   `;
 
 const SectionTabletPicture = styled.section`
-  background: #ffffff;
+  background: #EEEEEE;
   height: 100%;
   color: #FFD93D;
   text-align: left;
@@ -50,6 +50,7 @@ const SectionTabletPicture = styled.section`
 
   @media screen and (min-width: 1024px) {
   justify-content: flex-end;
+  height: 100vh;
   }
   `;
 
@@ -150,13 +151,11 @@ export const Sec1Presentation = () => {
           </ProfileAndInfoStructure>
           <ParagraphTextStructure>
             <ParagraphText>
-          With a background in retail, pedagogy, music, and snowboarding,
-          Andreas has always relied on his creativity, structure, and goal-oriented mindset.
-          These skills have now naturally and pleasantly translated into his programming work,
-          even if its not always easy. Andreas approaches every task with a high level of
-          responsibility and dedication, infusing his work with his unique character.
-          His projects always seem to bear his signature, showcasing his commitment to quality and
-          attention to detail.
+            Combining my expertise in web development,
+            pedagogy and retail management, I bring a unique
+            perspective into crafting user-centric experiences.
+            In addition, I love great design and have an attention
+            to detail. So, have a look at my creations below and let´s create together!
             </ParagraphText>
           </ParagraphTextStructure>
           <nav aria-label="linkbar">

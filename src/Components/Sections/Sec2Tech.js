@@ -7,7 +7,7 @@ import { ParagraphText, SectionTitle, BlueBackgroundText, DarkBlueBackgroundText
 // //////////// SECTION SPECIFIC STYLING ///////////// //
 
 export const Section = styled.section`
-  background: #EDFFFF;
+  background: #F8E5E5;
   height: 100%;
   color: yellow;
   text-align: center;

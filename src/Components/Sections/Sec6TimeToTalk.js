@@ -14,7 +14,7 @@ import { ProfileImage, Icons } from '../Styling/ImageStyling';
 // //////////// SECTION SPECIFIC STYLING ///////////// //
 
 export const Section = styled.section`
-  background: #F5F5F5;
+  background: #EEEEEE;
   height: 100%;
   color: #FFD93D;
   text-align: left;

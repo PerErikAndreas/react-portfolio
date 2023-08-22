@@ -27,7 +27,7 @@ import AuthIMG from '../Images/AuthIMG.png';
 // /////// SECTION-SPECIFIC STRUCTURE STYLING ///////// //
 
 const Section = styled.section`
-  background: #ffffff;
+  background: #FFFFFF;
   height: 100%;
   color: #FFD93D;
   text-align:center;
