@@ -114,7 +114,8 @@ export const Sec3FeaturedProjects = () => {
       <SectionTitle>Featured Projects</SectionTitle>
       <AllProjectsStructure>
 
-        {/* FINAL PROJECT ////////////////////////////////////////////////////////////// */}
+        {/* AI-Chatbot + Cookibanner PROJECT /////////////////////////////////////////////// */}
+
         <ProjectMainStructure>
           <ProjectImage src={AiChatbotIMG} alt="Ai-Chatbot" />
           <TabletStructure>
