@@ -135,8 +135,6 @@ export const Sec3FeaturedProjects = () => {
                 <BlackBackgroundText>Figma+Lottie</BlackBackgroundText>
                 <BlackBackgroundText>OpenAI</BlackBackgroundText>
                 <BlackBackgroundText>React</BlackBackgroundText>
-                <BlackBackgroundText>Node.js</BlackBackgroundText>
-                <BlackBackgroundText>MongoDB</BlackBackgroundText>
               </BlackBackgroundStructure>
               <ProjectButtonStructure>
                 <a href="https://github.com/PerErikAndreas/gtp-clone" target="_blank" title="Link to Ai-Multiassistant + Cookiebanner on GitHub" rel="noreferrer">
