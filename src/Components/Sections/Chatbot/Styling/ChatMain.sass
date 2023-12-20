@@ -443,6 +443,11 @@ input:focus
     
     60% 
       transform: translateY(-5px)
+
+.arrowcontainer
+  position: fixed
+  bottom: 10px /* Adjust this value according to your needs */
+  right: 10px
     
 .downarrowimg
   width: 28px
@@ -451,11 +456,15 @@ input:focus
   background: white
   padding: 5px
   margin-right: 0.75rem
-  position: relative
+  position: fixed
   animation: bounce 2s infinite
+  bottom: -5px /* Adjust this value according to your needs */
+  right: 0px
 
 .ai-here
-  position: absolute
+  position: fixed
+  bottom: 50px
+  right: 10px
   bottom: 165px
   right: -7.5rem
   background: white

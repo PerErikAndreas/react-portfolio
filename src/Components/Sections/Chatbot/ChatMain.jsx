@@ -172,7 +172,7 @@ export const ChatMain = () => {
   return (
     <div className="OuterWrapper">
       <button className={`ToggleBtn ${isMinimized ? 'minimized' : ''}`} type="button" onClick={toggleChatBot}>
-        <img src={downarrowimg} alt="gtp-img" className="downarrowimg" />
+        <div className="arrowcontainer"><img src={downarrowimg} alt="gtp-img" className="downarrowimg" /></div>
       </button>
       <div className="ai-here">
         <p>AI portfolio chatbot!</p>
