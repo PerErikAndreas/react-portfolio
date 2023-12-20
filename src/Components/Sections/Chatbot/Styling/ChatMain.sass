@@ -1,0 +1,489 @@
+@import './utilities/index'
+  
+* 
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+html
+  font-size: $Main-size
+
+.sideField
+  flex: 4
+  height: 0
+  width: 100%
+  border-right: none
+
+
+.mainField
+  display: flex
+  flex-direction: column
+  align-items: center
+  width: 60vw
+  margin: 0 auto 0 auto
+
+.icons
+  width: 20px
+  height: 20px
+  margin: 5px
+
+.icons3
+  width: 20px
+  height: 20px
+
+.icons3:hover
+  scale: 1.1
+
+.lowerSideField
+  position: absolute
+  bottom: 5px
+  width: 350px
+
+.linkItems
+  width: 330px
+  display: flex
+  align-items: center
+  justify-content: space-evenly
+  margin-bottom: 10px
+
+.chatFooter
+  margin-top: auto
+  display: flex
+  width: 100%
+  height: 44px
+  position: sticky
+  align-items: center
+  flex-direction: column
+
+.input
+  padding: 8px 5px 5px 8px
+  background-color: $Pure-white
+  display: flex
+  align-items: center
+  border-radius: 20px 20px 0 0
+  width: 100%
+  max-width: 330px
+  border: none
+  cursor: pointer
+  resize: none
+  font-size: 1.4rem
+  -ms-text-size-adjust: 100%
+  -webkit-text-size-adjust: 100%
+  outline: none
+
+
+input:focus
+  border: none
+
+.input > input
+  width: 100%
+  outline: none
+  padding: 10px
+  color: #000000
+  border: none
+
+
+.input > input, .sendButton
+  margin: 70% 0 0 0
+  background-color: transparent
+  border: none
+
+.sendButton:hover
+  scale: 1.1
+
+.chatContainer
+  overflow: hidden
+  overflow-y: auto
+  scroll-behavior: smooth
+  width: 100%
+  padding-top: 1.5rem
+  padding-bottom: 1rem
+  display: flex
+  flex-direction: column
+  border-radius: 20px
+  gap: 0.8rem
+  margin-top: 2.2rem
+  max-height: 62vh/* Set the desired max height for scrolling */
+  box-sizing: border-box
+  flex: 1
+
+.inputplusbutton
+  width: 100%
+  height: 70px
+  display: flex
+  justify-content: space-between
+
+.conversation
+  width: fit-content
+  width: 100%
+  min-width: 3rem
+  color: $Off-white
+  display: flex
+  flex-direction: column
+  gap: 8px
+  font-size: $Conversation-fontsize
+
+.conversation__question
+  background-color: $Conversation-user-background
+  border-radius: 2rem
+  color: white
+  padding: 1.5rem 1.5rem 1.5rem 1.5rem
+  width: fit-content
+  max-width: 330px
+  min-width: 10rem
+
+.conversation__answer
+  background-color: $Conversation-assistant-background
+  border-radius: 2rem
+  border: 2px solid $Primary
+  color: $Primary
+  padding: 1.5rem 1.5rem 1.5rem 1.5rem
+  width: fit-content
+  max-width: 330px
+
+.chaticons
+  width: 20px
+  height: 20px
+
+.assistantsButton
+  background-color: $Assistants-Button
+  border: none
+  color: $Off-white
+  padding: 1.6rem
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 auto
+  border-right: 2px solid $Off-white
+  border-bottom: 2px solid $Off-white
+  height: 25px
+  border-radius: 0 0 0 0
+  font-size: $Button-fontsize
+
+.assistantsButton1
+  background-color: $Assistants-Button
+  border: none
+  color: $Off-white
+  padding: 1.6rem
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 auto
+  border-bottom: 2px solid $Off-white
+  height: 25px
+  border-radius: 0 0 0 0
+  font-size: $Button-fontsize
+
+
+.assistantsButton2
+  background-color: $Assistants-Button
+  border: none
+  color: $Off-white
+  padding: 1.6rem
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 auto
+  height: 25px
+  border-right: 2px solid trasperent
+  border-radius: 0 0 0 20px
+  font-size: $Button-fontsize
+
+.assistantsButton3
+  background-color: $Assistants-Button
+  border: none
+  color: $Off-white
+  padding: 1.6rem
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 auto
+  height: 25px
+  border-radius: 0 0 20px 0
+  font-size: $Button-fontsize
+
+.assistantsButton:hover
+ background-color: $HooverBtn
+
+.assistantsButton1:hover
+ background-color: $HooverBtn
+
+.assistantsButton2:hover
+ background-color: $HooverBtn
+
+.assistantsButton3:hover
+ background-color: $HooverBtn
+
+
+.assistantsButton.active
+  background-color: $Assistants-Button-Active
+  color: $Pure-white
+
+.assistantsButton1.active
+  background-color: $Assistants-Button-Active
+  color: $Pure-white
+
+.assistantsButton2.active
+  background-color: $Assistants-Button-Active
+  color: $Pure-white
+
+.assistantsButton3.active
+  background-color: $Assistants-Button-Active
+  color: $Pure-white
+
+.conversation__greeting
+  background-color: $Greeting-circle
+  border-radius: 50%
+  padding: 1.5rem
+  width: 10rem
+  height: 10rem
+  align-items: center
+  font-size: $Greeting-fontsize
+  display: flex
+  justify-content: center
+  text-align: center
+
+.conversation__greetingcontainer
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  margin-top: -15px
+  height: 50vh
+
+.greetings-subtext-container
+  margin-top: 1rem
+  display: flex
+  width: 100%
+  gap: 1rem
+  flex-direction: column
+  align-items: center
+
+.greetings-subtext
+  font-size: 2.5rem
+  font-family: 'Dancing Script', cursive
+  transform: rotate(-15deg)
+
+.greetings-subsubtext-container
+  display: flex
+  width: 100%
+  border-radius: 20px
+  padding: 1rem 1rem 2rem 1rem
+  flex-direction: column
+  text-align: left
+
+.greetings-subsubtext
+  color: $Primary
+  font-size: 1.6rem
+
+.greetings-subsubtext1
+  color: $Primary
+  font-size: 1.2rem
+  font-weight: bold
+  margin-left: 3%
+  margin-top: 1rem
+
+.greetings-subsubtext2
+  color: $Off-white
+  font-size: 1.2rem
+  margin-left: 3%
+  margin-right: 2%  
+.icons__greeting
+  width: 10rem
+  height: 10rem
+
+.capitalize
+  text-transform: capitalize
+
+.notfoundmain
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  text-decoration: none
+  color: $Pure-white
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='2400' height='1300' preserveAspectRatio='none' viewBox='0 0 2400 1300'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1143%26quot%3b)' fill='none'%3e%3crect width='2400' height='1300' x='0' y='0' fill='rgba(95%2c 55%2c 111%2c 0.36)'%3e%3c/rect%3e%3cpath d='M0%2c646.169C116.142%2c615.888%2c169.759%2c485.874%2c267.333%2c415.978C357.982%2c351.043%2c485.828%2c342.149%2c550.858%2c251.568C620.62%2c154.397%2c654.089%2c26.653%2c631.118%2c-90.741C608.504%2c-206.308%2c507.399%2c-283.865%2c428.909%2c-371.652C351.701%2c-458.004%2c284.402%2c-558.633%2c176.081%2c-599.675C63.912%2c-642.175%2c-65.971%2c-647.677%2c-176.478%2c-601.027C-282.699%2c-556.186%2c-329.349%2c-437.863%2c-407.668%2c-353.247C-489.336%2c-265.013%2c-621.399%2c-210.517%2c-646.714%2c-92.983C-672.182%2c25.259%2c-581.621%2c132.791%2c-536.529%2c245.025C-488.965%2c363.413%2c-477.134%2c507.037%2c-374.951%2c583.436C-271.362%2c660.886%2c-125.157%2c678.8%2c0%2c646.169' fill='rgba(64%2c 37%2c 74%2c 0.36)'%3e%3c/path%3e%3cpath d='M2400 2067.1549999999997C2560.835 2092.126 2755.35 2150.701 2877.81 2043.4859999999999 3003.343 1933.58 2923.892 1721.534 2975.8559999999998 1562.9850000000001 3019.692 1429.2350000000001 3147.566 1331.558 3157.167 1191.136 3167.746 1036.408 3136.8940000000002 866.5609999999999 3031.235 753.032 2926.364 640.35 2755.893 633.357 2605.891 598.798 2464.666 566.261 2324.817 533.076 2181.942 557.363 2026.474 583.791 1861.685 624.894 1757.252 743.056 1652.517 861.56 1651.04 1032.597 1624.176 1188.453 1596.5259999999998 1348.87 1521.433 1522.622 1598.137 1666.199 1674.597 1809.32 1863.759 1836.007 2008.891 1908.578 2137.317 1972.795 2258.114 2045.126 2400 2067.1549999999997' fill='rgba(126%2c 73%2c 148%2c 0.36)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1143'%3e%3crect width='2400' height='1300' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e")
+  height: 100vh
+
+.SignoutBtn
+  display: flex
+  width: 100%
+  justify-content: flex-end
+  border: none
+  margin: 1rem 3rem 0 0
+  background: transparent
+  position: absolute
+
+.ToggleBtn
+  display: flex
+  width: 100%
+  top: 93vh
+  justify-content: flex-end
+  border: none
+  background: transparent
+  position: absolute
+  transform: scaleY(1)
+
+
+.ToggleBtn.minimized
+  display: flex
+  width: 100%
+  top: 93vh
+
+  justify-content: flex-end
+  border: none
+  background: transparent
+  position: absolute
+  transform: scaleY(-1)
+
+.signoutimg
+  margin-right: 0.8rem
+  width: 30px
+  height: 30px
+
+.signoutimg:hover
+  filter: brightness(1.4)
+
+.NotfoundLink
+  text-decoration: underline
+  color: white
+  font-size: 1.6rem
+
+.NotfoundBtn
+  background-color: $NewChat-Button
+  border: none
+  color: $Off-white
+  padding: 1.5rem
+  text-decoration: none
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  text-decoration: none
+  height: 35px
+  margin-top: 1rem
+  border-radius: $Border-radius-05
+  cursor: pointer
+
+.loader
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  z-index: 999
+  background: rgba(255, 255, 255, 0.7)
+
+.loader2
+  position: absolute
+  top: 2rem
+  left: 0
+  width: 100%
+  height: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  z-index: 999
+  background: transparent
+
+.chat-bot-container
+  position: fixed
+  width: 350px
+  min-height: 80vh /* Adjust the top position as needed */
+  right: 45px /* Adjust the right position as needed */
+  z-index: 1000 /* Ensure it appears above other elements */
+  border: 15px solid #e63946
+  border-bottom: none
+  border-radius: 4rem 4rem 0 0/* Adjust the border radius as needed */
+  box-shadow: 7px 7px 10px 3px #24004628
+  padding: 0 10px 0 10px /* Adjust padding as needed */
+  background: $Background-color
+  bottom: 0
+  transition: height 0.5s ease /* Add a smooth transition effect */
+  overflow: hidden
+
+  @include size(xs) 
+    transform: scale(0.60)
+    right: 28px /* Adjust the right position as needed */
+    top: 10.3vh
+
+  @include size(sm)
+    transform: scale(0.90)
+    right: 28px /* Adjust the right position as needed */
+    top: 25.3vh
+  
+.chat-bot-container.minimized
+  display: none
+
+.mainField
+  max-width: 100%
+  hegigt: 43vh
+  z-index: 1
+
+.chatFooter
+  padding-left: 1rem
+  padding-right: 1rem
+  position: absolute
+  bottom: 69px
+  z-index: 2
+
+@keyframes bounce 
+    0%, 20%, 50%, 80%, 100% 
+      transform: translateY(0)
+    
+    40% 
+      transform: translateY(-10px)
+    
+    60% 
+      transform: translateY(-5px)
+    
+.downarrowimg
+  width: 28px
+  height: 28px
+  margin-top: 1rem
+  background: white
+  padding: 5px
+  margin-right: 0.75rem
+  position: relative
+  animation: bounce 2s infinite
+
+.ai-here
+  position: absolute
+  bottom: 145px
+  right: -7.5rem
+  background: white
+  padding: 4px
+  font-size: 2rem
+  color: red
+  font-family: 'Futura', cursive
+  transform: rotate(-90deg)
+
+
+.linkPair1
+  width: 100%
+
+.linkPair2
+  width: 100%
+
+#cm
+  left: 1.25em !important
+
+.cleanbtn
+  background: none
+  border: none
+  margin: 2px
+  
+.chatFooterright
+  display: flex
+  justify-content: flex-end
+  width: 100%
+
+.nsm7Bb-HzV7m-LgbsSe
+  border-radius: 2rem !important
