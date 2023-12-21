@@ -120,7 +120,7 @@ export const Sec3FeaturedProjects = () => {
           <ProjectImage src={AiChatbotIMG} alt="Ai-Chatbot" />
           <TabletStructure>
             <ProjectTextStructure>
-              <ProjectTitle>Ai-Multiassistant/Chatbot + Cookiebanner</ProjectTitle>
+              <ProjectTitle>Ai-Multiassistant + Cookiebanner</ProjectTitle>
               <ParagraphText>
         In this MERN-stack project I dived deeper in to the world of AI and building with
         Open-AIs new Assistants. This particular bot is just helping
