@@ -265,7 +265,7 @@ input:focus
 
 .greetings-subtext
   font-size: 2.5rem
-  font-family: 'Dancing Script', cursive
+  font-family: 'Futura', cursive
   transform: rotate(-15deg)
 
 .greetings-subsubtext-container
@@ -321,23 +321,22 @@ input:focus
 .ToggleBtn
   display: flex
   width: 100%
-  top: 93vh
+  bottom: 10px
   justify-content: flex-end
   border: none
   background: transparent
-  position: absolute
+  position: fixed
   transform: scaleY(1)
 
 
 .ToggleBtn.minimized
   display: flex
   width: 100%
-  top: 93vh
-
+  bottom: 10px
   justify-content: flex-end
   border: none
   background: transparent
-  position: absolute
+  position: fixed
   transform: scaleY(-1)
 
 .signoutimg
@@ -444,11 +443,6 @@ input:focus
     
     60% 
       transform: translateY(-5px)
-
-.arrowcontainer
-  position: fixed
-  bottom: 10px /* Adjust this value according to your needs */
-  right: 10px
     
 .downarrowimg
   width: 28px
@@ -459,13 +453,11 @@ input:focus
   margin-right: 0.75rem
   position: fixed
   animation: bounce 2s infinite
-  bottom: -5px /* Adjust this value according to your needs */
   right: 0px
 
 .ai-here
   position: fixed
   bottom: 50px
-  right: 10px
   bottom: 165px
   right: -7.5rem
   background: white
