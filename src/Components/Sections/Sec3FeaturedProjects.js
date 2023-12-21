@@ -171,7 +171,7 @@ export const Sec3FeaturedProjects = () => {
             <BlackBackgroundAndProjectButtonStucture>
               <BlackBackgroundStructure>
                 <BlackBackgroundText>Redux</BlackBackgroundText>
-                <BlackBackgroundText>OpenAI</BlackBackgroundText>
+                <BlackBackgroundText>AI</BlackBackgroundText>
                 <BlackBackgroundText>React</BlackBackgroundText>
                 <BlackBackgroundText>Node.js</BlackBackgroundText>
                 <BlackBackgroundText>MongoDB</BlackBackgroundText>
