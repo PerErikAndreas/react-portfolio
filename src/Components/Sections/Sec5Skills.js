@@ -66,6 +66,7 @@ export const Sec5Skills = () => {
               <li lang="en">JSX</li>
               <li lang="en">Node.js</li>
               <li lang="en">Redux</li>
+              <li lang="en">Vue</li>
             </List>
           </ParagraphText>
         </SkillFrame>
@@ -86,6 +87,7 @@ export const Sec5Skills = () => {
           <ParagraphText>
             <List lang="en">
               <li lang="en">Agile methdology</li>
+              <li lang="en">Retail</li>
             </List>
           </ParagraphText>
         </SkillFrame>
