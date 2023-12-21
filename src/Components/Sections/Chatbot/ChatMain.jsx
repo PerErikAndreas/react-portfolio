@@ -192,7 +192,8 @@ export const ChatMain = () => {
                 <div className="conversation__greetingcontainer">
                   <div className="conversation__greeting" />
                   <div className="greetings-subtext-container">
-                    <p className="greetings-subsubtext">Chat with the bot about my developer skills!</p>
+                    <p className="greetings-subsubtext">Chat with the bot</p>
+                    <p className="greetings-subsubtext">about my developer skills!</p>
                   </div>
                 </div>
               </div>
