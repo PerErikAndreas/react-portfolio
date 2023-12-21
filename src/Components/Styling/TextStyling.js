@@ -49,7 +49,7 @@ export const SectionTitle2 = styled.h2`
     color: #e63946;
     font-family: Futura;
     font-weight: 900;
-    font-size: 52px;
+    font-size: 50px;
     line-height: 78px;
     margin: 35px auto 20px auto;
     `;
