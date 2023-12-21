@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/static/css/main.dc8e0625.css",
+    "main.js": "/static/js/main.5b252f62.js",
+    "static/media/FamilyIMG.JPG": "/static/media/FamilyIMG.56401683c5d09797b8f6.JPG",
+    "static/media/ChatbotIMG.png": "/static/media/ChatbotIMG.1e4f7711bbf76f774913.png",
+    "static/media/NewsSiteIMG.png": "/static/media/NewsSiteIMG.a141df326ac8bda0aa68.png",
+    "static/media/FinalTodoIMG.png": "/static/media/FinalTodoIMG.ed088d4e34433b239af0.png",
+    "static/media/GuessWhoIMG.png": "/static/media/GuessWhoIMG.b9b93a028151a348f131.png",
+    "static/media/ToDoIMG.png": "/static/media/ToDoIMG.8d71f25a65c36702c999.png",
+    "static/media/StuckOnIMG.png": "/static/media/StuckOnIMG.2fe43e2c3457e6ea8f9c.png",
+    "static/media/MusicReleasesIMG.png": "/static/media/MusicReleasesIMG.e766995ce78062b8b73c.png",
+    "static/media/AndreasImage.jpeg": "/static/media/AndreasImage.b6062104065ca5f71b9c.jpeg",
+    "static/media/ReduxQuizIMG.png": "/static/media/ReduxQuizIMG.6fccf0841e5d5c4cd5a3.png",
+    "static/media/SurveyIMG.png": "/static/media/SurveyIMG.29cbf14513ca03d638b9.png",
+    "static/media/BusinessSiteIMG.png": "/static/media/BusinessSiteIMG.1bf981057f23d4feeb98.png",
+    "static/media/DesignHandoffIMG.png": "/static/media/DesignHandoffIMG.a1eef8b0b58e396cd392.png",
+    "static/media/FlixListIMG.png": "/static/media/FlixListIMG.973ba2c0477e6036ec68.png",
+    "static/media/AiChatbotIMG.png": "/static/media/AiChatbotIMG.ddbd0ba97f474777f1ec.png",
+    "static/media/ExpressApiIMG.png": "/static/media/ExpressApiIMG.5d4df79c102e0f3e2a34.png",
+    "static/media/LabyrinthIMG.jpeg": "/static/media/LabyrinthIMG.bd2d84db0e50ad0bcb18.jpeg",
+    "static/media/AuthIMG.png": "/static/media/AuthIMG.965adefc2062d6fe9b85.png",
+    "static/media/HappyThoughtIMG.png": "/static/media/HappyThoughtIMG.8a28849b2aea46f52743.png",
+    "static/media/WeatherAppIMG.png": "/static/media/WeatherAppIMG.43df6c1755cfb7b31657.png",
+    "static/media/GitHubIMG.svg": "/static/media/GitHubIMG.f693d363496e75ba0bcbd3f6f0ce37f0.svg",
+    "static/media/InstagramIMG.svg": "/static/media/InstagramIMG.84717248f4fc99dee722a11ae0bdea23.svg",
+    "index.html": "/index.html",
+    "static/media/LinkedInIMG.svg": "/static/media/LinkedInIMG.615cc12dbef25cd5953a7e155406c339.svg",
+    "static/media/StackOverflowIMG.svg": "/static/media/StackOverflowIMG.39d100800c35adf8de07feb95ad0e017.svg",
+    "main.dc8e0625.css.map": "/static/css/main.dc8e0625.css.map",
+    "main.5b252f62.js.map": "/static/js/main.5b252f62.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dc8e0625.css",
+    "static/js/main.5b252f62.js"
+  ]
+}
