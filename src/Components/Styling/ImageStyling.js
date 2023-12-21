@@ -15,7 +15,7 @@ export const ProfileImage = styled.img`
 
 // PROJECTIMAGES
 export const ProjectImage = styled.img`
-    width: 100%; 
+    width: 97%; 
     height: auto;
     object-fit: cover;
     margin: auto;
