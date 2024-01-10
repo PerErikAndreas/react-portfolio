@@ -7,7 +7,7 @@ import styled from 'styled-components';
 // NAME STYLING
 export const NameStyling = styled.h1`
     color: #e63946;
-    font-family: Futura;
+    font-family: 'Futura', Arial, sans-serif;
     font-weight: 700;
     font-size: 28px;
     line-height: 37.8px;
@@ -17,7 +17,7 @@ export const NameStyling = styled.h1`
 // JOBTITLE STYLING
 export const JobTitleStyling = styled.h3`
     color: #373833;
-    font-family: Futura;
+    font-family: 'Futura', Arial, sans-serif;
     font-weight: 900;
     font-size: 28px;
     line-height: 43.2px;
@@ -27,7 +27,7 @@ export const JobTitleStyling = styled.h3`
 // + TEXT STYLING
 export const PlusTextStyling = styled.h4`
     color: grey;
-    font-family: Futura;
+    font-family: 'Futura', Arial, sans-serif;
     font-weight: 500;
     font-size: 24px;
     line-height: 32.4px;
@@ -37,7 +37,7 @@ export const PlusTextStyling = styled.h4`
 // SECTION TITLES
 export const SectionTitle = styled.h2`
     color: #e63946;
-    font-family: Futura;
+    font-family: 'Futura', Arial, sans-serif;
     font-weight: 700;
     font-size: 78px;
     line-height: 108px;
@@ -47,7 +47,7 @@ export const SectionTitle = styled.h2`
 // SECTION TITLES2
 export const SectionTitle2 = styled.h2`
     color: #e63946;
-    font-family: Futura;
+    font-family: 'Futura', Arial, sans-serif;
     font-weight: 900;
     font-size: 52px;
     line-height: 78px;
@@ -57,7 +57,7 @@ export const SectionTitle2 = styled.h2`
 // PARAGRAPH STYLING
 export const ParagraphText = styled.p`
     color: #373833;
-    font-family: EB Garamond;
+    font-family: 'EB Garamond', Georgia, serif;
     font-weight: 400;
     font-size: 22px;
     line-height: 28.71px;
@@ -68,7 +68,7 @@ export const ParagraphText = styled.p`
 export const BlueBackgroundText = styled.p`
     color: #FFFFFF;
     background-color: #0B24F5;
-    font-family: EB Garamond;
+    font-family: 'EB Garamond', Georgia, serif;
     font-weight: 400;
     font-size: 22px;
     line-height: 28.71px;
@@ -79,7 +79,7 @@ export const BlueBackgroundText = styled.p`
 export const PinkBackgroundText = styled.p`
     color: #FFFFFF;
     background-color: #cb133e;
-    font-family: EB Garamond;
+    font-family: 'EB Garamond', Georgia, serif;
     font-weight: 400;
     font-size: 22px;
     line-height: 28.71px;
@@ -90,7 +90,7 @@ export const PinkBackgroundText = styled.p`
 export const DarkBlueBackgroundText = styled.p`
     color: #FFFFFF;
     background-color: #06427d;
-    font-family: EB Garamond;
+    font-family: 'EB Garamond', Georgia, serif;
     font-weight: 400;
     font-size: 22px;
     line-height: 28.71px;
@@ -101,7 +101,7 @@ export const DarkBlueBackgroundText = styled.p`
 export const BlackBackgroundText = styled.p`
     color: #FFFFFF;
     background-color: #000000;
-    font-family: EB Garamond;
+    font-family: 'EB Garamond', Georgia, serif;
     font-weight: 400;
     font-size: 22px;
     line-height: 28.71px;
@@ -112,7 +112,7 @@ export const BlackBackgroundText = styled.p`
 export const GreenBackgroundText = styled.p`
     color: #FFFFFF;
     background-color: #6DB486;
-    font-family: EB Garamond;
+    font-family: 'EB Garamond', Georgia, serif;
     font-weight: 400;
     font-size: 22px;
     line-height: 28.71px;
@@ -122,7 +122,7 @@ export const GreenBackgroundText = styled.p`
 // PROJECT TITLES
 export const ProjectTitle = styled.h2`
     color: #373833;
-    font-family: Futura;
+    font-family: 'Futura', Arial, sans-serif;
     font-weight: 900;
     font-size: 32px;
     line-height: 43.2px;
