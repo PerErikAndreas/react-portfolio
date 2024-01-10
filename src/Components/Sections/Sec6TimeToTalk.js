@@ -2,7 +2,7 @@
 
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
-import AndreasImage from '../Images/AndreasImage.jpeg';
+import AndreasImage from '../Images/AndreasImage.jpg';
 import LinkedInIMG from '../Images/LinkedInIMG.svg';
 import GitHubIMG from '../Images/GitHubIMG.svg';
 import StackOverflowIMG from '../Images/StackOverflowIMG.svg';
