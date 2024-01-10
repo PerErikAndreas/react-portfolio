@@ -120,13 +120,11 @@ export const Sec3FeaturedProjects = () => {
           <ProjectImage src={AiChatbotIMG} alt="Ai-Chatbot" />
           <TabletStructure>
             <ProjectTextStructure>
-              <ProjectTitle>Ai-Multiassistant + Cookiebanner</ProjectTitle>
+              <ProjectTitle>Ai-bot + Cookiebanner</ProjectTitle>
               <ParagraphText>
-        In this MERN-stack project I dived deeper in to the world of AI and building with
-        Open-AIs new Assistants. This particular bot is just helping
-        you get to know me as a developer but you can make it know about anything!
-        In addition to this also learned to implement a cookibanner and how it should be structured
-        and how to make animations in Figma + Lottie.
+        In this MERN-stack project I dived deeper in to the world of AI. Built this bot that helps
+        you get to know me as a developer (can make it know about anything!) In this project
+        also gained skills in implementing cookiebanners and creating animations with Figma+Lottie.
               </ParagraphText>
             </ProjectTextStructure>
             <BlackBackgroundAndProjectButtonStucture>
