@@ -4,12 +4,12 @@ import React from 'react';
 import styled from 'styled-components';
 import { JobTitleStyling, NameStyling, ParagraphText, PlusTextStyling } from '../Styling/TextStyling';
 import { ProfileImage, Icons, BackgroundImage } from '../Styling/ImageStyling';
-import AndreasImage from '../Images/AndreasImage.jpeg';
+import AndreasImage from '../Images/AndreasImage.jpg';
 import LinkedInIMG from '../Images/LinkedInIMG.svg';
 import GitHubIMG from '../Images/GitHubIMG.svg';
 import StackOverflowIMG from '../Images/StackOverflowIMG.svg';
 import InstagramIMG from '../Images/InstagramIMG.svg';
-import FamilyIMG from '../Images/FamilyIMG.JPG';
+import FamilyIMG from '../Images/FamilyIMG.jpg';
 
 // //////////// SECTION SPECIFIC STYLING ///////////// //
 

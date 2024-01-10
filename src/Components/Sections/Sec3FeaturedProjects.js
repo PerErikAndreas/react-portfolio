@@ -6,24 +6,24 @@ import { ParagraphText, SectionTitle, ProjectTitle, BlackBackgroundText } from '
 import { ProjectImage } from '../Styling/ImageStyling';
 import { Link } from './Sec6TimeToTalk';
 import { BlueButton, PinkButton } from '../Styling/ButtonStyling';
-import ToDoIMG from '../Images/ToDoIMG.png';
-import FlixListIMG from '../Images/FlixListIMG.png';
-import SurveyIMG from '../Images/SurveyIMG.png';
-import HappyThoughtIMG from '../Images/HappyThoughtIMG.png';
-import ChatbotIMG from '../Images/ChatbotIMG.png';
-import WeatherAppIMG from '../Images/WeatherAppIMG.png';
-import DesignHandoffIMG from '../Images/DesignHandoffIMG.png';
-import ReduxQuizIMG from '../Images/ReduxQuizIMG.png';
-import FinalTodoIMG from '../Images/FinalTodoIMG.png';
-import NewsSiteIMG from '../Images/NewsSiteIMG.png';
-import BusinessSiteIMG from '../Images/BusinessSiteIMG.png';
-import StuckOnIMG from '../Images/StuckOnIMG.png';
-import GuessWhoIMG from '../Images/GuessWhoIMG.png';
-import MusicReleasesIMG from '../Images/MusicReleasesIMG.png';
-import LabyrinthIMG from '../Images/LabyrinthIMG.jpeg';
-import ExpressApiIMG from '../Images/ExpressApiIMG.png';
-import AuthIMG from '../Images/AuthIMG.png';
-import AiChatbotIMG from '../Images/AiChatbotIMG.png';
+import ToDoIMG from '../Images/ToDoIMG.jpg';
+import FlixListIMG from '../Images/FlixListIMG.jpg';
+import SurveyIMG from '../Images/SurveyIMG.jpg';
+import HappyThoughtIMG from '../Images/HappyThoughtIMG.jpg';
+import ChatbotIMG from '../Images/ChatbotIMG.jpg';
+import WeatherAppIMG from '../Images/WeatherAppIMG.jpg';
+import DesignHandoffIMG from '../Images/DesignHandoffIMG.jpg';
+import ReduxQuizIMG from '../Images/ReduxQuizIMG.jpg';
+import FinalTodoIMG from '../Images/FinalTodoIMG.jpg';
+import NewsSiteIMG from '../Images/NewsSiteIMG.jpg';
+import BusinessSiteIMG from '../Images/BusinessSiteIMG.jpg';
+import StuckOnIMG from '../Images/StuckOnIMG.jpg';
+import GuessWhoIMG from '../Images/GuessWhoIMG.jpg';
+import MusicReleasesIMG from '../Images/MusicReleasesIMG.jpg';
+import LabyrinthIMG from '../Images/LabyrinthIMG.jpg';
+import ExpressApiIMG from '../Images/ExpressApiIMG.jpg';
+import AuthIMG from '../Images/AuthIMG.jpg';
+import AiChatbotIMG from '../Images/AiChatbotIMG.jpg';
 
 // /////// SECTION-SPECIFIC STRUCTURE STYLING ///////// //
 
