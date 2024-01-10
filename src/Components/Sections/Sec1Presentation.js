@@ -9,7 +9,7 @@ import LinkedInIMG from '../Images/LinkedInIMG.svg';
 import GitHubIMG from '../Images/GitHubIMG.svg';
 import StackOverflowIMG from '../Images/StackOverflowIMG.svg';
 import InstagramIMG from '../Images/InstagramIMG.svg';
-import FamilyIMG from '../Images/FamilyIMG.jpg';
+import FamilyIMG from '../Images/FamilyIMG2.jpg';
 
 // //////////// SECTION SPECIFIC STYLING ///////////// //
 
