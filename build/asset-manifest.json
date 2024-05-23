@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.00703680.css",
-    "main.js": "/static/js/main.286a16fe.js",
+    "main.js": "/static/js/main.94f46ab4.js",
     "static/media/FamilyIMG2.jpg": "/static/media/FamilyIMG2.56d3405e2f928a73ace5.jpg",
     "static/media/AndreasImage.jpg": "/static/media/AndreasImage.10ca1501973d5e817e3a.jpg",
     "static/media/ChatbotIMG.jpg": "/static/media/ChatbotIMG.9d8c9f724ccc5bb81cd6.jpg",
@@ -12,8 +12,8 @@
     "static/media/FinalTodoIMG.jpg": "/static/media/FinalTodoIMG.3adb9a4e6912965f8ae6.jpg",
     "static/media/GuessWhoIMG.jpg": "/static/media/GuessWhoIMG.937f7fa1dd6210c008d9.jpg",
     "static/media/BusinessSiteIMG.jpg": "/static/media/BusinessSiteIMG.baf6fd27b49af30234a3.jpg",
-    "static/media/StuckOnIMG.jpg": "/static/media/StuckOnIMG.c8f731ecfec1cbf4258f.jpg",
     "static/media/DesignHandoffIMG.jpg": "/static/media/DesignHandoffIMG.5eee37db79b73be1838d.jpg",
+    "static/media/StuckonIMG.jpg": "/static/media/StuckonIMG.0c39b0086beb5a1279f3.jpg",
     "static/media/LabyrinthIMG.jpg": "/static/media/LabyrinthIMG.5472b4851657a3d9dbdf.jpg",
     "static/media/FlixListIMG.jpg": "/static/media/FlixListIMG.79ccee7c61491859c71a.jpg",
     "static/media/HappyThoughtIMG.jpg": "/static/media/HappyThoughtIMG.8d719d414025a7613dc7.jpg",
@@ -30,6 +30,6 @@
   },
   "entrypoints": [
     "static/css/main.00703680.css",
-    "static/js/main.286a16fe.js"
+    "static/js/main.94f46ab4.js"
   ]
 }

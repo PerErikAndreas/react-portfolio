@@ -17,7 +17,6 @@ import ReduxQuizIMG from '../Images/ReduxQuizIMG.jpg';
 import FinalTodoIMG from '../Images/FinalTodoIMG.jpg';
 import NewsSiteIMG from '../Images/NewsSiteIMG.jpg';
 import BusinessSiteIMG from '../Images/BusinessSiteIMG.jpg';
-import StuckOnIMG from '../Images/StuckOnIMG.jpg';
 import GuessWhoIMG from '../Images/GuessWhoIMG.jpg';
 import MusicReleasesIMG from '../Images/MusicReleasesIMG.jpg';
 import LabyrinthIMG from '../Images/LabyrinthIMG.jpg';
