@@ -23,7 +23,7 @@ import LabyrinthIMG from '../Images/LabyrinthIMG.jpg';
 import ExpressApiIMG from '../Images/ExpressApiIMG.jpg';
 import AuthIMG from '../Images/AuthIMG.jpg';
 import AiChatbotIMG from '../Images/AiChatbotIMG.jpg';
-import StuckonIMG from '../Images/StuckonIMG.jpg';
+import StuckOnIMG from '../Images/StuckOnIMG.jpg';
 
 // /////// SECTION-SPECIFIC STRUCTURE STYLING ///////// //
 
@@ -116,7 +116,7 @@ export const Sec3FeaturedProjects = () => {
         {/* Stuckon.se PROJECT /////////////////////////////////////////////// */}
 
         <ProjectMainStructure>
-          <ProjectImage src={StuckonIMG} alt="Stuckon.se" />
+          <ProjectImage src={StuckOnIMG} alt="Stuckon.se" />
           <TabletStructure>
             <ProjectTextStructure>
               <ProjectTitle>UI Design + Vue build</ProjectTitle>
