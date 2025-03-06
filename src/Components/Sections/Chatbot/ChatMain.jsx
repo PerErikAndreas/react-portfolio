@@ -5,7 +5,6 @@
 // //////////////////////////////////////////////////////////////////////// //
 
 import React, { useState, useEffect } from 'react';
-import OpenAI from 'openai';
 import { ChatOutput } from './ChatOutput';
 import { ChatInput } from './ChatInput';
 import { API_URL } from './utils/urls'; // Import the "API_URL" constant from the "utils/urls" module
@@ -17,14 +16,7 @@ import './Styling/ChatMain.sass'
 import clean from './assets/clean2.png';
 import downarrowimg from './assets/downarrow.png';
 
-const openai = new OpenAI({
-  apiKey: process.env.REACT_APP_OPENAI_API_KEY, // Make sure this is correctly set
-  dangerouslyAllowBrowser: true,
-  baseURL: 'https://api.openai.com/v1', // v1 is still required for threads
-  headers: {
-    'OpenAI-Beta': 'assistants=v2' // Required to use Assistants v2
-  }
-});
+const apiKey = process.env.REACT_APP_OPENAI_API_KEY;
 
 // //////////////////////////////////////////////////////////////////////// //
 // ////////////////////////////////// APP ///////////////////////////////// //
@@ -42,20 +34,10 @@ export const ChatMain = () => {
   // //////////////////////////////////////////////////////////////////////// //
 
   // eslint-disable-next-line global-require
-
-  const apiKey = process.env.REACT_APP_OPENAI_API_KEY; // Declare apiKey separately
-
-  if (!apiKey) {
-    console.error('OpenAI API key is missing. Check your .env file.');
-  }
-
+  const OpenAI = require('openai');
   const openai = new OpenAI({
     apiKey,
-    dangerouslyAllowBrowser: true,
-    baseURL: 'https://api.openai.com/v1',
-    headers: {
-      'OpenAI-Beta': 'assistants=v2'
-    }
+    dangerouslyAllowBrowser: true
   });
 
   // //////////////////////////////////////////////////////////////////////// //
@@ -71,47 +53,63 @@ export const ChatMain = () => {
   // //////////////////////////////////////////////////////////////////////// //
 
   const ResponseGenerate = async (inputText, setInputText) => {
-    setLoading(true);
+    setLoading(true); // Set loading to true if no message, false if there is a message
+    // HERE IS THE ASSISTANT //
+    const assistant = await openai.beta.assistants.retrieve( //
+      'asst_qcT4FkzCIC0XcPBLZEyTP519'
+    );
 
-    try {
-      // Create a new thread
-      const thread = await openai.threads.create();
+    // CREATING THE THREAD //
+    const thread = await openai.beta.threads.create();
 
-      // Add a message to the thread
-      await openai.threads.messages.create(thread.id, {
+    // CREATING THE MESSAGE //
+    const message1 = await openai.beta.threads.messages.create(
+      thread.id,
+      {
         role: 'user',
-        content: inputText
-      });
-
-      // Start the assistant run
-      const run = await openai.threads.runs.create(thread.id, {
-        assistant_id: 'asst_qcT4FkzCIC0XcPBLZEyTP519', // Replace with your assistant ID
-        instructions
-      });
-
-      // Poll for the run status
-      let runStatus;
-      do {
-        // eslint-disable-next-line no-await-in-loop, no-promise-executor-return
-        await new Promise((resolve) => setTimeout(resolve, 2000));
-        // eslint-disable-next-line no-await-in-loop
-        runStatus = await openai.threads.runs.retrieve(thread.id, run.id);
-      } while (runStatus.status !== 'completed');
-
-      // Retrieve messages from the thread
-      const messages = await openai.threads.messages.list(thread.id);
-
-      const responseMessage = messages.data.find((msg) => msg.role === 'assistant');
-      if (responseMessage) {
-        const str = responseMessage.content[0].text.value;
-        const newMessage = { question: inputText, answer: str, threadId: thread.id };
-        setMessage([...message, newMessage]);
-        setInputText('');
+        content: `${inputText}`
       }
-    } catch (error) {
-      console.error('Error communicating with OpenAI:', error);
+    );
+
+    // CREATING THE RUN //
+    const run = await openai.beta.threads.runs.create(
+      thread.id,
+      {
+        assistant_id: assistant.id,
+        instructions: `${instructions}`
+      }
+    );
+
+    // VIEW THE RUN //
+    let runStatus = await openai.beta.threads.runs.retrieve(
+      thread.id,
+      run.id
+    );
+
+    // CHECK IS RUNSTATUS = COMPLETED //
+    while (runStatus.status !== 'completed') {
+      // eslint-disable-next-line no-await-in-loop
+      runStatus = await openai.beta.threads.runs.retrieve(thread.id, run.id);
+      // eslint-disable-next-line no-await-in-loop, no-promise-executor-return
+      await new Promise((resolve) => setTimeout(resolve, 2000));
     }
 
+    // GET THE ASSISTANTS RESPONSE //
+    const messages = await openai.beta.threads.messages.list(
+      thread.id,
+      assistant.id,
+      {
+        assistant_id: assistant.id
+      }
+    );
+
+    const str = messages.data[0].content[0].text.value;
+
+    if (str) {
+      const newMessage = { question: inputText, answer: str, threadId: thread.id };
+      setMessage([...message, newMessage]);
+      setInputText('');
+    }
     setLoading(false);
   };
 
