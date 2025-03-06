@@ -17,7 +17,14 @@ import './Styling/ChatMain.sass'
 import clean from './assets/clean2.png';
 import downarrowimg from './assets/downarrow.png';
 
-const apiKey = process.env.REACT_APP_OPENAI_API_KEY;
+const openai = new OpenAI({
+  apiKey: process.env.REACT_APP_OPENAI_API_KEY, // Make sure this is correctly set
+  dangerouslyAllowBrowser: true,
+  baseURL: 'https://api.openai.com/v1', // v1 is still required for threads
+  headers: {
+    'OpenAI-Beta': 'assistants=v2' // Required to use Assistants v2
+  }
+});
 
 // //////////////////////////////////////////////////////////////////////// //
 // ////////////////////////////////// APP ///////////////////////////////// //
