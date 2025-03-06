@@ -43,10 +43,16 @@ export const ChatMain = () => {
 
   // eslint-disable-next-line global-require
 
+  const apiKey = process.env.REACT_APP_OPENAI_API_KEY; // Declare apiKey separately
+
+  if (!apiKey) {
+    console.error('OpenAI API key is missing. Check your .env file.');
+  }
+
   const openai = new OpenAI({
     apiKey,
     dangerouslyAllowBrowser: true,
-    baseURL: 'https://api.openai.com/v2', // Ensure you're using v2
+    baseURL: 'https://api.openai.com/v1',
     headers: {
       'OpenAI-Beta': 'assistants=v2'
     }
