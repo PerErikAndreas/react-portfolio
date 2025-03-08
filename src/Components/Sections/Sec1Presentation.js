@@ -4,7 +4,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { JobTitleStyling, NameStyling, ParagraphText, PlusTextStyling } from '../Styling/TextStyling';
 import { ProfileImage, Icons, BackgroundImage } from '../Styling/ImageStyling';
-import AndreasImage from '../Images/AndreasImage.jpg';
+import AndreasImage from '../Images/AndreasImage.jpeg';
 import LinkedInIMG from '../Images/LinkedInIMG.svg';
 import GitHubIMG from '../Images/GitHubIMG.svg';
 import StackOverflowIMG from '../Images/StackOverflowIMG.svg';
@@ -145,7 +145,7 @@ export const Sec1Presentation = () => {
             </ProfileImageStructure>
             <InfoStructure>
               <NameStyling>Andreas Axelsson</NameStyling>
-              <JobTitleStyling>Frontend Developer</JobTitleStyling>
+              <JobTitleStyling>Frontend Developer / Teacher</JobTitleStyling>
               <PlusTextStyling>+ background in retail</PlusTextStyling>
             </InfoStructure>
           </ProfileAndInfoStructure>
