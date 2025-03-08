@@ -5,6 +5,7 @@
 // //////////////////////////////////////////////////////////////////////// //
 
 import React, { useState, useEffect } from 'react';
+import { OpenAI } from 'openai'; // Importera OpenAI från SDK
 import { ChatOutput } from './ChatOutput';
 import { ChatInput } from './ChatInput';
 import { API_URL } from './utils/urls'; // Import the "API_URL" constant from the "utils/urls" module
@@ -34,10 +35,10 @@ export const ChatMain = () => {
   // //////////////////////////////////////////////////////////////////////// //
 
   // eslint-disable-next-line global-require
-  const OpenAI = require('openai');
+
   const openai = new OpenAI({
-    apiKey,
-    dangerouslyAllowBrowser: true
+    apiKey: process.env.REACT_APP_OPENAI_API_KEY, // Se till att API-nyckeln är korrekt
+    dangerouslyAllowBrowser: true // Endast om du kör i webbläsaren
   });
 
   // //////////////////////////////////////////////////////////////////////// //
@@ -55,32 +56,32 @@ export const ChatMain = () => {
     setLoading(true);
 
     try {
-      // Skapa en tråd (thread)
-      const thread = await openai.threads.create();
+      // 1️Skapa en tråd (thread)
+      const thread = await openai.beta.threads.create();
 
-      // Skapa ett meddelande i tråden
-      await openai.threads.messages.create(thread.id, {
+      // 2️ Skapa ett meddelande i tråden
+      await openai.beta.threads.messages.create(thread.id, {
         role: 'user',
         content: inputText
       });
 
-      // Skapa en körning (run) för assistenten
-      const run = await openai.threads.runs.create(thread.id, {
-        assistant_id: 'asst_qcT4FkzCIC0XcPBLZEyTP519', // Ersätt med din riktiga assistent-ID
+      // 3️Skapa en körning (run) för assistenten
+      const run = await openai.beta.threads.runs.create(thread.id, {
+        assistant_id: 'asst_qcT4FkzCIC0XcPBLZEyTP519', // Ersätt med ditt ID
         instructions
       });
 
-      // Vänta på att körningen ska bli klar
+      // 4️Vänta på att körningen ska bli klar
       let runStatus;
       do {
         // eslint-disable-next-line no-await-in-loop, no-promise-executor-return
         await new Promise((resolve) => setTimeout(resolve, 2000));
         // eslint-disable-next-line no-await-in-loop
-        runStatus = await openai.threads.runs.retrieve(thread.id, run.id);
+        runStatus = await openai.beta.threads.runs.retrieve(thread.id, run.id);
       } while (runStatus.status !== 'completed');
 
-      // Hämta svaret från assistenten
-      const messages = await openai.threads.messages.list(thread.id);
+      // 5️Hämta svaret från assistenten
+      const messages = await openai.beta.threads.messages.list(thread.id);
 
       if (messages.data.length > 0) {
         const str = messages.data[0].content[0].text.value;
