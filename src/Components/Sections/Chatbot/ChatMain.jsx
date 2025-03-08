@@ -55,7 +55,7 @@ export const ChatMain = () => {
     setLoading(true);
 
     try {
-      // Skapa en tråd (thread) 
+      // Skapa en tråd (thread)
       const thread = await openai.threads.create();
 
       // Skapa ett meddelande i tråden
