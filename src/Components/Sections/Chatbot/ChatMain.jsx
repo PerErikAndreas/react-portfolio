@@ -51,65 +51,47 @@ export const ChatMain = () => {
   // //////////////////////////////////////////////////////////////////////// //
   // ////////////////////////////// OPEN AI ///////////////////////////////// //
   // //////////////////////////////////////////////////////////////////////// //
-
   const ResponseGenerate = async (inputText, setInputText) => {
-    setLoading(true); // Set loading to true if no message, false if there is a message
-    // HERE IS THE ASSISTANT //
-    const assistant = await openai.beta.assistants.retrieve( //
-      'asst_qcT4FkzCIC0XcPBLZEyTP519'
-    );
+    setLoading(true);
 
-    // CREATING THE THREAD //
-    const thread = await openai.beta.threads.create();
+    try {
+      // Skapa en tråd (thread) 
+      const thread = await openai.threads.create();
 
-    // CREATING THE MESSAGE //
-    const message1 = await openai.beta.threads.messages.create(
-      thread.id,
-      {
+      // Skapa ett meddelande i tråden
+      await openai.threads.messages.create(thread.id, {
         role: 'user',
-        content: `${inputText}`
+        content: inputText
+      });
+
+      // Skapa en körning (run) för assistenten
+      const run = await openai.threads.runs.create(thread.id, {
+        assistant_id: 'asst_qcT4FkzCIC0XcPBLZEyTP519', // Ersätt med din riktiga assistent-ID
+        instructions
+      });
+
+      // Vänta på att körningen ska bli klar
+      let runStatus;
+      do {
+        // eslint-disable-next-line no-await-in-loop, no-promise-executor-return
+        await new Promise((resolve) => setTimeout(resolve, 2000));
+        // eslint-disable-next-line no-await-in-loop
+        runStatus = await openai.threads.runs.retrieve(thread.id, run.id);
+      } while (runStatus.status !== 'completed');
+
+      // Hämta svaret från assistenten
+      const messages = await openai.threads.messages.list(thread.id);
+
+      if (messages.data.length > 0) {
+        const str = messages.data[0].content[0].text.value;
+        const newMessage = { question: inputText, answer: str, threadId: thread.id };
+        setMessage([...message, newMessage]);
+        setInputText('');
       }
-    );
-
-    // CREATING THE RUN //
-    const run = await openai.beta.threads.runs.create(
-      thread.id,
-      {
-        assistant_id: assistant.id,
-        instructions: `${instructions}`
-      }
-    );
-
-    // VIEW THE RUN //
-    let runStatus = await openai.beta.threads.runs.retrieve(
-      thread.id,
-      run.id
-    );
-
-    // CHECK IS RUNSTATUS = COMPLETED //
-    while (runStatus.status !== 'completed') {
-      // eslint-disable-next-line no-await-in-loop
-      runStatus = await openai.beta.threads.runs.retrieve(thread.id, run.id);
-      // eslint-disable-next-line no-await-in-loop, no-promise-executor-return
-      await new Promise((resolve) => setTimeout(resolve, 2000));
+    } catch (error) {
+      console.error('Error generating response:', error);
     }
 
-    // GET THE ASSISTANTS RESPONSE //
-    const messages = await openai.beta.threads.messages.list(
-      thread.id,
-      assistant.id,
-      {
-        assistant_id: assistant.id
-      }
-    );
-
-    const str = messages.data[0].content[0].text.value;
-
-    if (str) {
-      const newMessage = { question: inputText, answer: str, threadId: thread.id };
-      setMessage([...message, newMessage]);
-      setInputText('');
-    }
     setLoading(false);
   };
 
