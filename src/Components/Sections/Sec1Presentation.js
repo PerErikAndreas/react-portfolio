@@ -145,7 +145,8 @@ export const Sec1Presentation = () => {
             </ProfileImageStructure>
             <InfoStructure>
               <NameStyling>Andreas Axelsson</NameStyling>
-              <JobTitleStyling>Frontend Developer / Teacher</JobTitleStyling>
+              <JobTitleStyling>Frontend Developer &</JobTitleStyling>
+              <JobTitleStyling>Teacher</JobTitleStyling>
               <PlusTextStyling>+ background in retail</PlusTextStyling>
             </InfoStructure>
           </ProfileAndInfoStructure>
